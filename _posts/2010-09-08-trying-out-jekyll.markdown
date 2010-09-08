@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Trying out Jekyll
+title: Trying out Jekyll | Brilliant Corners
 ---
 This is a first post trying out Jekyll.
 
