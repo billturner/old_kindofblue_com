@@ -12,3 +12,5 @@ permalink: /:year/:month/:title
 
 markdown: rdiscount
 pygments: false
+
+exclude: README.markdown
