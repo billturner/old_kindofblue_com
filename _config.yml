@@ -1,0 +1,7 @@
+auto: true
+source: .
+paginate: 10
+permalink: /:month/:day/:title
+
+markdown: rdiscount
+pygments: true
