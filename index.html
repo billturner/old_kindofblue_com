@@ -1,13 +1,27 @@
 ---
 layout: default
-title: Bill Turner's Weblog | Brilliant Corners
+title: Bill Turner's Weblog
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+{% for post in site.posts %}
+  <article class="post">
+
+    <h3><a href="{{ site.url }}{{ post.url }}" rel="bookmark permalink" title="Permanent link to this post">{{ post.title }}</a></h3>
+
+    {{ post.content }}
+
+    <div class="meta">
+      {{ post.date | date: "%Y-%m-%d" }}
+      {% if post.tags.size > 0 %}
+        &mdash;
+        {% for tag in post.tags %}
+          <span class="tag">#{{tag | downcase}}</span>
+        {% endfor %}
+      {% endif %}
+      &mdash;
+      <a href="{{ site.url }}{{ post.url }}#disqus_thread" title="View and leave comments on this post">Comments</a>
+    </div>
+
+  </article>
+  
+{% endfor %}

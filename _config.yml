@@ -1,3 +1,10 @@
+title: "Brilliant Corners"
+description: "Jon Smajda's Blog"
+url: "http://billturner.github.com"
+author: "Bill Turner"
+email: "billturner@gmail.com"
+description: "The weblog of Pittsburgh-based Ruby on Rails developer Bill Turner"
+
 auto: true
 source: .
 paginate: 10

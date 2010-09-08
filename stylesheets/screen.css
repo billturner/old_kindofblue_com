@@ -1,0 +1,75 @@
+/* HTML5 Reset Stylesheet from: http://html5doctor.com/html-5-reset-stylesheet/ (compressed by TextMate) */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;}
+body{line-height:1;}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section{display:block;}
+nav ul{list-style:none;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;}
+ins{background-color:#ff9;color:#000;text-decoration:none;}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold;}
+del{text-decoration:line-through;}
+abbr[title],dfn[title]{border-bottom:1px dotted inherit;cursor:help;}
+table{border-collapse:collapse;border-spacing:0;}
+hr{display:block;height:1px;border:0;border-top:1px solid #cccccc;margin:1em 0;padding:0;}
+input,select{vertical-align:middle;}
+
+/* Layout */
+body {
+  font: normal 76%/1.5 Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+#container {
+  width: 700px;
+  text-align: left;
+  margin: 15px auto;
+}
+
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 2.0em;
+}
+h3 {
+  font-size: 1.5em;
+}
+/* Nav */
+nav {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+  nav ul li {
+    display: inline;
+  }
+
+/* Header */
+header { text-align: left; font-size: 1.3em; padding: 5px 0; }
+header h1 { font-weight: bold; margin: 0; padding: 0; }
+header h1 a { text-decoration: none; }
+
+/* Article/post/page style */
+article {
+  margin-bottom: 25px;
+}
+  article .meta {
+    color: #696969;
+  }
+  article code { font-family: "Courier New", Courier, monospace; line-height: 1.2; }
+
+  article pre { padding: 10px; margin: 10px 0; overflow: auto; width: 95%; background: #eee; color: #000; }
+
+/* Page styles */
+ul.links { margin-bottom: 20px; padding: 0; list-style: none; }
+ul.links li { margin: 0; padding: 0; display: inline; }
+ul.links li:after { content: ' / '; }
+ul.links li.first { font-weight: bold; }
+ul.links li.last:after, ul.links li.first:after { content: '  '; }
+
+/* footer */
+footer {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px dotted #333;
+}

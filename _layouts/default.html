@@ -1,17 +1,47 @@
 <!DOCTYPE html>
 <html>
-<head>
-   <meta charset="utf-8" />
-   <title>{{ page.title }}</title>
-   <meta name="author" content="Bill Turner" />
-   <meta name="robots" content="index, follow" />
-   <meta name="description" content="Bill Turner's weblog" />
-   <meta name="keywords" content="Bill Turner, billturner, bluemonk creative, Pittsburgh, PA, Pgh, Ruby, Rails, Sinatra, Merb, MySQL, PostreSQL, Ruby on Rails, DataMapper, HAML, CSS, HTML5" />
-   <meta name="verify-v1" content="RSMb2KYbcQeGf3TqptQMIElrtpzyvqWMTzEOroLxf5c" />
-   <meta name="y_key" content="cbc4cef39e9a1b5b=" />
- </head>
-</head>
-<body>
-  {{ content }}
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <meta name="author" content="{{ site.author }}" />
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="{{ site.description }}" />
+    <meta name="keywords" content="Bill Turner, billturner, bluemonk creative, Pittsburgh, PA, Pgh, Ruby, Rails, Sinatra, Merb, MySQL, PostreSQL, Ruby on Rails, DataMapper, HAML, CSS, HTML5" />
+    <meta name="verify-v1" content="RSMb2KYbcQeGf3TqptQMIElrtpzyvqWMTzEOroLxf5c" />
+    <meta name="y_key" content="cbc4cef39e9a1b5b=" />
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="/stylesheets/screen.css" media="screen" rel="stylesheet" type="text/css" />
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="container">
+
+      <nav>
+        <ul>
+          <li><a href="{{ site.url }}/" rel="home bookmark" title="Return to the {{ site.title }} homepage">Home</a></li>
+          <li><a href="{{ site.url }}/archives.html" rel="bookmark" title="{{ site.title }} post archives">Archives</a></li>
+          <li><a href="{{ site.url }}/links.html" rel="bookmark" title="Interesting and friendly links">Links</a></li>
+          <li><a href="{{ site.url }}/about.html" rel="bookmark" title="About {{ site.author }} and this site">About</a></li>
+        </ul>
+      </nav>
+
+      <header>
+        <h1><a href="{{ site.url }}" rel="home bookmark">{{ site.title }}</a></h1>
+      </header>
+
+      <div id="content">
+        {{ content }}
+      </div>
+
+      <footer>
+        All content copyright &copy; {{ 'now' | date: "%Y" }} Bill Turner, unless otherwise specified. 
+        Powered by <a href="http://github.com/mojombo/jekyll" title="The jekyll (static site generator) code repository" rel="external">jekyll</a> &amp; <a href="http://github.com/" title="The Github Homepage" rel="external">Github</a>.
+      </footer>
+    </div>
+
+    {% include google_analytics.html %}
+    {% include disqus.html %}
+  </body>
 </html>

@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Installing MongoDB on Ubuntu
+tags: 
+- mongodb
+- ubuntu
 ---
 There are already a few installation tutorials for getting [MongoDB](http://www.mongodb.org/ "The MongoDB home page") up and running on an Ubuntu server, but each either left a step or two out, or their suggested setup wasn't what I was looking for, so I'm sharing my own tips. But, a few notes first:
 
