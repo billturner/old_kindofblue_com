@@ -51,13 +51,15 @@ header h1 a { text-decoration: none; }
 
 /* Article/post/page style */
 article {
+  font-size: 1.2em;
   margin-bottom: 25px;
 }
-  article .meta {
-    color: #696969;
-  }
-  article code { font-family: "Courier New", Courier, monospace; line-height: 1.2; }
+  article h2, article h3 { margin: 10px 0; }
+  article .meta { padding: 0 0 5px 0; font-size: 1.1em; color: #696969; }
+  article .meta a { color: #696969; text-decoration: none; }
+  article .meta a:hover { color: #333; }
 
+  article code { font-family: "Courier New", Courier, monospace; line-height: 1.2; }
   article pre { padding: 10px; margin: 10px 0; overflow: auto; width: 95%; background: #eee; color: #000; }
 
 /* Page styles */
@@ -66,6 +68,10 @@ ul.links li { margin: 0; padding: 0; display: inline; }
 ul.links li:after { content: ' / '; }
 ul.links li.first { font-weight: bold; }
 ul.links li.last:after, ul.links li.first:after { content: '  '; }
+
+.pagination { font-size: 1.2em; width: 99%; margin: 10px; }
+.pagination .previous_link { float: left; padding-left: 25px; }
+.pagination .next_link { float: right; padding-right: 25px; }
 
 /* footer */
 footer {

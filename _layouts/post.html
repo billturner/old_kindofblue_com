@@ -12,7 +12,7 @@ layout: default
     {% if page.tags.size > 0 %}
       &mdash;
       {% for tag in page.tags %}
-        <span class="tag">#{{tag | downcase}}</span>
+        <a href="http://google.com/#q=site:{{ site.url | remove:'http://' }}+{{ tag | downcase | replace:' ','+' }}" rel="tag category" title="Search this site for other posts on {{ tag | downcase | escape }} (using Google)">#{{tag | downcase}}</a>
       {% endfor %}
     {% endif %}
   </div>
