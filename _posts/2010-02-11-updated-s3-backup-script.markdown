@@ -1,6 +1,8 @@
 ---
 layout: post
+date: 2010-02-11T13:34:03-0500
 title: Updated my s3 backup script to support MongoDB
+excerpt: Since I started playing with MongoDB, I wanted my backup script to include them in the backups.
 tags:
 - mongodb
 - ruby

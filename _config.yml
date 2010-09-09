@@ -1,11 +1,10 @@
 title: "Brilliant Corners"
-description: "Jon Smajda's Blog"
-url: "http://billturner.github.com"
+url: "http://localhost:4000"
 author: "Bill Turner"
 email: "billturner@gmail.com"
 description: "The weblog of Pittsburgh-based Ruby on Rails developer Bill Turner"
 
-auto: true
+auto: false
 source: .
 paginate: 10
 permalink: /:year/:month/:title
@@ -13,4 +12,4 @@ permalink: /:year/:month/:title
 markdown: rdiscount
 pygments: false
 
-exclude: README.markdown
+exclude: README.markdown, deploy.rb

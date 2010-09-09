@@ -16,7 +16,7 @@ layout: nil
         <title>{{ post.title }}</title>
         <link>{{ site.url }}{{ post.url }}</link>
         <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
-        <guid>{{ site.url }}/archives{{ post.id }}/</guid>
+        <guid>{{ site.url }}{{ post.url }}</guid>
         <description>
           <![CDATA[
             {{ post.content }}

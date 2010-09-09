@@ -1,7 +1,9 @@
 ---
 layout: post
+date: 2010-01-31T20:34:51-05:00
 title: Installing MongoDB on Ubuntu
-tags: 
+excerpt: A now-outdated list of instructions to build MongoDB on an Ubuntu system.
+tags:
 - mongodb
 - ubuntu
 ---

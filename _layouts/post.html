@@ -8,7 +8,7 @@ layout: default
   {{ content }}
 
   <div class="meta">
-    {{ page.date | date: "%Y-%m-%d" }}
+    {{ page.date | date: "%Y-%m-%d %I:%M%p" }}
     {% if page.tags.size > 0 %}
       &mdash;
       {% for tag in page.tags %}

@@ -12,33 +12,93 @@
     <link href="{{ site.url }}/rss.xml" rel="alternate" title="Brilliant Corners RSS feed" type="application/rss+xml" /> 
     <link href="http://brilliantcorners.org/" rel="home" />
     <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    <link href="/stylesheets/screen.css" media="screen" rel="stylesheet" type="text/css" />
+    <link type="text/css" rel="stylesheet" media="screen, projection" href="/stylesheets/screen.css" /> 
+    <link type="text/css" rel="stylesheet" media="print" href="/stylesheets/print.css" /> 
+    <!--[if lt IE 8]>
+      <link type="text/css" rel="stylesheet" media="screen, projection" href="/stylesheets/ie.css" />
+    <![endif]--> 
+    <link type="text/css" rel="stylesheet" media="all" href="/stylesheets/custom.css" />
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
   <body>
-    <div id="container">
+    <div class="container">
 
-      <nav>
-        <ul>
-          <li><a href="{{ site.url }}/" rel="home bookmark" title="Return to the {{ site.title }} homepage">Home</a></li>
-          <li><a href="{{ site.url }}/archives.html" rel="bookmark" title="{{ site.title }} post archives">Archives</a></li>
-          <li><a href="{{ site.url }}/links.html" rel="bookmark" title="Interesting and friendly links">Links</a></li>
-          <li><a href="{{ site.url }}/about.html" rel="bookmark" title="About {{ site.author }} and this site">About</a></li>
-          <li><a href="{{ site.url }}/rss.xml" title="RSS / Syndication feed for {{ site.title }}">RSS</a></li>
-        </ul>
-      </nav>
-
-      <header>
+      <header class="span-21 last" id="header">
         <h1><a href="{{ site.url }}" rel="home bookmark">{{ site.title }}</a></h1>
       </header>
 
-      <div id="content">
+      <div class="span-16" id="content">
         {{ content }}
       </div>
 
-      <footer>
+      <div class="span-5 last" id="sidebar">
+        <div class="sidebarbox"> 
+          <h4 id="about-header">About</h4> 
+          <p>This is the weblog of Bill Turner, a web application developer in Pittsburgh, PA. Here I write about Ruby and books and art and other things.</p> 
+        </div> 
+        <div class="sidebarbox"> 
+          <h4 id="pages-header">Pages</h4> 
+          <ul id="pages"> 
+            <li> 
+              <a rel="bookmark" title="About" href="{{ site.url }}/about.html">About</a> 
+            </li> 
+            <li> 
+              <a rel="bookmark" title="Links" href="{{ site.url }}/links.html">Links</a> 
+            </li> 
+          </ul> 
+        </div> 
+        <div class="sidebarbox"> 
+          <h4 id="more-content-header">More Content</h4> 
+          <ul id="more-content"> 
+            <li> 
+              <a rel="bookmark" title="All archived posts at Brilliant Corners" href="{{ site.url }}/archive.html" id="archives">Archives</a> 
+            </li> 
+            <li> 
+              <a title="The RSS feed for new posts at Brilliant Corners" href="{{ site.url }}/rss" id="feed">RSS</a> 
+            </li> 
+          </ul> 
+        </div> 
+        <div class="sidebarbox"> 
+          <h4 id="more-content-header">Me Elsewhere</h4> 
+          <ul id="more-content"> 
+            <li> 
+              <a rel="bookmark" title="My photos at Flickr" href="http://flickr.com/billturner">Flickr</a> 
+            </li> 
+            <li> 
+              <a rel="bookmark" title="My inspiration weblog on Tumblr" href="http://billturner.tumblr.com/">Tumblr</a> 
+            </li> 
+            <li> 
+              <a rel="bookmark" title="My mini-posts at Twitter" href="http://twitter.com/billturner">Twitter</a> 
+            </li> 
+            <li> 
+              <a rel="bookmark" title="My profile at LinkedIn" href="http://linkedin.com/in/billturner">LinkedIn</a> 
+            </li> 
+            <li> 
+              <a rel="bookmark" title="My open sourced code on GitHub" href="http://github.com/billturner">GitHub</a> 
+            </li> 
+          </ul> 
+        </div> 
+        <div class="sidebarbox"> 
+          <h4 id="more-content-header">Contact Me</h4> 
+          <ul id="more-content"> 
+            <li> 
+              <a rel="bookmark" title="Send me an email. I'd love to hear from you." href="mailto:billturner@gmail.com">billturner@gmail.com</a> 
+            </li> 
+            <li> 
+              AIM:
+              <a rel="bookmark" title="Contact me via AOL IM" href="aim:goim?screenname=illturner">illturner</a> 
+            </li> 
+            <li> 
+              Skype:
+              <a rel="bookmark" title="Contact me via Skype" href="skype:bill.turner?chat">bill.turner</a> 
+            </li> 
+          </ul> 
+        </div> 
+      </div>
+
+      <footer class="span-21 last" id="footer">
         All content copyright &copy; {{ 'now' | date: "%Y" }} Bill Turner, unless otherwise specified. 
         Powered by <a href="http://github.com/mojombo/jekyll" title="The jekyll (static site generator) code repository" rel="external">jekyll</a> &amp; <a href="http://github.com/" title="The Github Homepage" rel="external">Github</a>.
       </footer>
