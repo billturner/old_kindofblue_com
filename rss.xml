@@ -6,7 +6,7 @@ layout: nil
   <channel>
     <title>{{ site.title }}</title>
     <link>{{ site.url }}/</link>
-    <language>en</language>
+    <language>en-us</language>
     <webMaster>{{ site.email }} ({{ site.author }})</webMaster>
     <pubDate>{{ site.time | date_to_xmlschema }}</pubDate>
     <ttl>60</ttl>
@@ -15,7 +15,7 @@ layout: nil
       <item>
         <title>{{ post.title }}</title>
         <link>{{ site.url }}{{ post.url }}</link>
-        <pubDate>{{ post.date }}</pubDate>
+        <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
         <guid>{{ site.url }}/archives{{ post.id }}/</guid>
         <description>
           <![CDATA[
@@ -24,7 +24,7 @@ layout: nil
         </description>
         {% if post.tags.size > 0 %}
           {% for tag in post.tags %}
-            <category>{{ tag | downcase | escape }}</category>
+            <category><![CDATA[{{ tag | downcase }}]]></category>
           {% endfor %}
         {% endif %}
       </item>
