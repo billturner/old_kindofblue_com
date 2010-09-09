@@ -1,0 +1,50 @@
+body { text-align: center; }
+
+.container { margin: 10px auto; }
+
+code { font-family: "Courier New", Courier, monospace; line-height: 1.2; }
+
+pre { padding: 10px; overflow: auto; width: 95%; background: #eee; color: #000; }
+
+#header { text-align: left; font-size: 1.3em; border-top: 1px dotted #333; background: #eee; padding: 5px; }
+#header h1 { font-weight: bold; margin: 0; padding: 0; }
+#header h1 a { text-decoration: none; }
+
+#content { text-align: left; }
+
+article { margin-bottom: 45px; }
+.post { font-size: 1.2em; }
+.post h3 { margin: 10px 0; }
+.post .postbody { font-family: Georgia, "Times New Roman", serif; }
+.post .meta { padding: 0 0 5px 0; font-size: 1.1em; color: #696969; }
+.post .meta a { color: #696969; text-decoration: none; }
+.post .meta a:hover { color: #333; }
+
+ul.pager { text-align: center; font-size: 1.1em; }
+ul.pager li { display: inline; margin-right: 5px; }
+ul.pager li.active a { text-decoration: none; }
+
+ul.archive-tags li { display: inline; padding-right: 5px; }
+
+ul.links { margin-bottom: 20px; padding: 0; list-style: none; }
+ul.links li { margin: 0; padding: 0; display: inline; }
+ul.links li:after { content: ' / '; }
+ul.links li.first { font-weight: bold; }
+ul.links li.last:after, ul.links li.first:after { content: '  '; }
+
+#footer { margin-top: 10px; padding-top: 10px; border-top: 1px dotted #333; }
+
+.admin { padding: 3px 5px; margin: 5px 0; border: 1px solid #aaa; background: #eee; }
+
+#sidebar { text-align: left; }
+#sidebar .sidebarbox { margin-bottom: 10px; }
+#sidebar .sidebarbox h4 { margin: 3px 0; border-bottom: 1px dotted #333; }
+#sidebar .sidebarbox p { font-family: Georgia, "Times New Roman", serif; padding-left: 2px; font-size: 1.2em; }
+#sidebar .sidebarbox ul { margin-left: 1px; padding: 2px; list-style-type: none; }
+#sidebar .sidebarbox ul li { font-size: 1.2em; padding: 0 0 5px 0; }
+
+a#feed { padding: 1px 20px 1px 1px; background: url("/feedicon16.png") center right no-repeat; text-align: left; }
+
+.pagination { font-size: 1.2em; width: 99%; margin: 10px; }
+.pagination .previous_link { float: left; padding-left: 25px; }
+.pagination .next_link { float: right; padding-right: 25px; }

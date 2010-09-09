@@ -1,5 +1,5 @@
 title: "Brilliant Corners"
-url: "http://localhost:4000"
+url: "http://brilliantcorners.org"
 author: "Bill Turner"
 email: "billturner@gmail.com"
 description: "The weblog of Pittsburgh-based Ruby on Rails developer Bill Turner"
@@ -12,4 +12,4 @@ permalink: /:year/:month/:title
 markdown: rdiscount
 pygments: false
 
-exclude: README.markdown, deploy.rb
+exclude: README.markdown
