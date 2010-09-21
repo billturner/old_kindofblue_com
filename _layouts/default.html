@@ -10,11 +10,11 @@
     <meta name="verify-v1" content="RSMb2KYbcQeGf3TqptQMIElrtpzyvqWMTzEOroLxf5c" />
     <meta name="google-site-verification" content="wa6-nvPgRbRP7RQOSXPC4bXvDyNMT4mrlJ6WuLfaHAk" />
     <meta name="y_key" content="cbc4cef39e9a1b5b=" />
-    <link href="{{ site.url }}/rss" rel="alternate" title="Brilliant Corners RSS feed" type="application/rss+xml" /> 
+    <link href="{{ site.url }}/rss" rel="alternate" title="Brilliant Corners RSS feed" type="application/rss+xml" />
     <link href="http://brilliantcorners.org/" rel="home" />
     <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <link type="text/css" rel="stylesheet" media="screen, projection" href="/stylesheets/screen.css" /> 
-    <link type="text/css" rel="stylesheet" media="print" href="/stylesheets/print.css" /> 
+    <link type="text/css" rel="stylesheet" media="print" href="/stylesheets/print.css" />
     <!--[if lt IE 8]>
       <link type="text/css" rel="stylesheet" media="screen, projection" href="/stylesheets/ie.css" />
     <![endif]--> 
@@ -22,6 +22,7 @@
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    {% include google_analytics.html %}
   </head>
   <body>
     <div class="container">
@@ -47,17 +48,17 @@
             </li> 
             <li> 
               <a rel="bookmark" title="Links" href="{{ site.url }}/links.html">Links</a> 
-            </li> 
-          </ul> 
-        </div> 
-        <div class="sidebarbox"> 
-          <h4 id="more-content-header">More Content</h4> 
-          <ul id="more-content"> 
+            </li>
             <li> 
               <a rel="bookmark" title="All archived posts at Brilliant Corners" href="{{ site.url }}/archive.html" id="archives">Archives</a> 
-            </li> 
+            </li>
+          </ul>
+        </div>
+        <div class="sidebarbox"> 
+          <h4 id="more-content-header">Subscribe</h4> 
+          <ul id="more-content"> 
             <li> 
-              <a title="The RSS feed for new posts at Brilliant Corners" href="{{ site.url }}/rss" id="feed">RSS</a> 
+              <a title="The RSS feed for new posts at Brilliant Corners" href="{{ site.url }}/rss" class="icon-link" id="feed-link">RSS</a> 
             </li> 
           </ul> 
         </div> 
@@ -65,19 +66,19 @@
           <h4 id="more-content-header">Me Elsewhere</h4> 
           <ul id="more-content"> 
             <li> 
-              <a rel="bookmark" title="My photos at Flickr" href="http://flickr.com/billturner">Flickr</a> 
+              <a rel="bookmark" title="My photos at Flickr" href="http://flickr.com/billturner" class="icon-link" id="flickr-link">Flickr</a> 
             </li> 
             <li> 
-              <a rel="bookmark" title="My inspiration weblog on Tumblr" href="http://billturner.tumblr.com/">Tumblr</a> 
+              <a rel="bookmark" title="My inspiration weblog on Tumblr" href="http://billturner.tumblr.com/" class="icon-link" id="tumblr-link">Tumblr</a> 
             </li> 
             <li> 
-              <a rel="bookmark" title="My mini-posts at Twitter" href="http://twitter.com/billturner">Twitter</a> 
+              <a rel="bookmark" title="My mini-posts at Twitter" href="http://twitter.com/billturner" class="icon-link" id="twitter-link">Twitter</a> 
             </li> 
             <li> 
-              <a rel="bookmark" title="My profile at LinkedIn" href="http://linkedin.com/in/billturner">LinkedIn</a> 
+              <a rel="bookmark" title="My open sourced code on GitHub" href="http://github.com/billturner" class="icon-link" id="github-link">GitHub</a> 
             </li> 
             <li> 
-              <a rel="bookmark" title="My open sourced code on GitHub" href="http://github.com/billturner">GitHub</a> 
+              <a rel="bookmark" title="My profile at LinkedIn" href="http://linkedin.com/in/billturner" class="icon-link" id="linkedin-link">LinkedIn</a> 
             </li> 
           </ul> 
         </div> 
@@ -85,15 +86,13 @@
           <h4 id="more-content-header">Contact Me</h4> 
           <ul id="more-content"> 
             <li> 
-              <a rel="bookmark" title="Send me an email. I'd love to hear from you." href="mailto:billturner@gmail.com">billturner@gmail.com</a> 
+              <a rel="bookmark" title="Send me an email. I'd love to hear from you." href="mailto:billturner@gmail.com" class="icon-link" id="gmail-link">billturner@gmail.com</a> 
             </li> 
             <li> 
-              AIM:
-              <a rel="bookmark" title="Contact me via AOL IM" href="aim:goim?screenname=illturner">illturner</a> 
+              <a rel="bookmark" title="Contact me via Skype" href="skype:bill.turner?chat" class="icon-link" id="skype-link">bill.turner</a> 
             </li> 
             <li> 
-              Skype:
-              <a rel="bookmark" title="Contact me via Skype" href="skype:bill.turner?chat">bill.turner</a> 
+              <a rel="bookmark" title="Contact me via AOL IM" href="aim:goim?screenname=illturner" class="icon-link" id="aim-link">illturner</a> 
             </li> 
           </ul> 
         </div> 
@@ -105,7 +104,18 @@
       </footer>
     </div>
 
-    {% include google_analytics.html %}
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+      //<![CDATA[
+        $(document).ready(function() {
+          $("a.icon-link").click( function(e) {
+            _gaq.push(['_trackEvent', 'External Links', 'Click', $(this).html()]);
+          });
+        });
+      //]]>
+    </script>
+
     {% include disqus.html %}
+
   </body>
 </html>
