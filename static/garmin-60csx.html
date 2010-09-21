@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en-US">
+ <head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+       <title>  Fixing a dead Garmin GPSMap 60CSx | Brilliant Corners</title>
+   <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://brilliantcorners.org/rss" />
+   <meta name="robots" content="index, follow" />
+   <meta name="author" content="Bill Turner" />
+
+   <link rel="shortcut icon" href="http://brilliantcorners.org/favicon.ico" />
+   <link rel="home" href="http://brilliantcorners.org/" />
+   <link rel='index' title='Brilliant Corners' href='http://brilliantcorners.org' />
+   <meta name="keywords" content="weblog, brilliant, corners, pittsburgh, dallas, italy, merb, ruby on rails, ruby, rails, music, programming, web development, jquery, javascript, customer service, garmin, gps, gpsr" />
+   {% include google_analytics.html %}
+ </head>
+ <body>
+
+   <div id="wrapper">
+
+     <div id="header">
+       <h1><a href="http://brilliantcorners.org" title="Brilliant Corners" rel="home bookmark"><span>Brilliant Corners</span></a></h1>
+     </div>
+
+     <div id="content">
+
+       <div style="border: 1px solid orange; font-weight: bold; padding: 10px; margin: 10px 0;">
+         NOTE: This post is no longer part of my proper weblog archive, but so many folks have found it useful that I'm sticking it up in this format. Hopefully it's still relevant and helps someone.
+       </div>
+     <!-- Main Content Begins -->
+     <div id="posts">
+
+           <div class="post-87 post hentry category-posts tag-customer-service tag-garmin tag-gps tag-gpsr" id="post-87">
+           <h2 class="title">Fixing a dead Garmin GPSMap 60CSx</h2>
+     <div class="post-content">
+                 <p>One of my favorite gifts that I received this last Christmas has been my <a href="http://www.amazon.com/gp/product/B000CSOXTO?ie=UTF8&amp;tag=billturner&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B000CSOXTO">Garmin GPSMap 60CSx</a> GPS receiver (GPSr). Now that the weather has been getting better, I&#8217;ve been itching to use it to start tracking my bike rides (which I can later plot on a map). So, to get ready, I started up Parallels, connected the GPSr, and updated the firmware (mainly to get the update to correct the new daylight savings time).</p>
+
+<p>Everything seemed to go just fine when running the WebUpdater application, until a small note on the last message box during the update process. There was something there about a problem with the update, but the message box had a &#8220;Finish&#8221; button, so I blew it off as something I probably didn&#8217;t need to worry about. But I did need to worry. Once I disconnected the unit, it wouldn&#8217;t start up. At all. I got a flash of some kind of info screen, but it immediately went blank again. Nothing. Dead. I tried to run the firmware updating software again, only for it to not even find the GPSr, even though it was plugged in. Great.</p>
+
+<p>I hopped online to see if I could find any information about this problem. In the excellent <a href="http://forums.groundspeak.com/gc/">Groundspeak geocaching forums</a> I read some similar reports, but all the tips the suggested to get the GPSr working again didn&#8217;t work for me. Many said they ended up having to send in theirs in to Garmin to get fixed. I didn&#8217;t want to do that.</p>
+
+<p>A few folks in the forum suggested to others that they call Garmin&#8217;s customer support, and that they were nice and quite helpful. So I did, and after some back and forth and checking with other support staff, the friendly chap at Garmin support helped me fix my GPSr <em>without</em> having to send it in. Yay!</p>
+
+<p>So, ANYWAY, here&#8217;s the point of this post: here&#8217;s one way to revive your dead Garmin GPSMap 60CSx:</p>
+
+<ol>
+<li>Download the latest firmware file from <a href="http://www.gpsinformation.org/perry/gps60/">this handy site</a>. The filename will look like this: GPSMAP60CSx_330.exe (where the 330 is the firmware version number).</li>
+
+<li>Double click the .exe (which is a self-extracting archive) and it will ask you where you want to extract the files (the default is c:\garmin). If you have your other Garmin applications (like MapSource) already installed in c:\garmin, then choose another location to extract the files.</li>
+<li>Now, here&#8217;s where it gets tricky. Since the unit wasn&#8217;t recognized by the firmware updater on its own, customer support gave me the crazy keypad combination to trick the updater to see your USB GPSr: <strong>hold down the power button (on the top of the unit) and push the directional button in the up (&#8220;^&#8221;) position.</strong></li>
+<li>While holding those buttons down, double click on the Updater.exe file in the directory where the firmware updates were extracted to.</li>
+<li>If this worked for you, then your GPSr <em>should</em> now show up for the firmware update program. While <strong>still</strong> holding down the two buttons, make sure your GPS device is selected, and then click the &#8220;OK&#8221; button to start the firmware update.</li>
+
+<li>During the entire firmware update process you need to hold those buttons down. The update can take several minutes, and your fingers will start to HURT, but you need to hold them down.</li>
+<li>Once the update has completed, you can relax your fingers and you should now be able to start up your GPSr.</li>
+<li>Jump for joy!</li>
+</ol>
+
+<p>This post is probably too long for such a simple fix, but if all this rambling helps someone out there, then it was worth it. I&#8217;m glad I have my updated 60CSx and that I <em>didn&#8217;t</em> have to send it back to Garmin.</p>
+             </div>
+
+     <div class="post-metadata">
+       April 4, 2007
+     </div>
+
+             <div class="ad-block-main">
+         <script type="text/javascript"><!--
+         google_ad_client = "pub-1749187452842552";
+         /* 468x60, created 4/2/09 */
+         google_ad_slot = "0816642014";
+         google_ad_width = 468;
+         google_ad_height = 60;
+         //-->
+         </script>
+
+         <script type="text/javascript"
+         src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+         </script>
+       </div>
+       <div id="comments">
+
+<!-- You can start editing here. -->
+
+     <h3 id="comments">Responses:</h3>
+
+     <div class="navigation">
+       <div class="alignleft"></div>
+
+       <div class="alignright"></div>
+     </div>
+
+     <ol class="commentlist">
+           <li class="comment even thread-even depth-1" id="li-comment-33">
+     <div id="comment-33">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn">Pierre Lepeer</cite> <span class="says">said</span> on <a href="#comment-33">May 17, 2007</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>Great! You saved my life. It worked great on a 60CS! Many thanxs! :-)</p>
+       </div>
+
+     </div>
+ </li>
+   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-34">
+     <div id="comment-34">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn">Kevin Draz</cite> <span class="says">said</span> on <a href="#comment-34">May 26, 2007</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>Thanks for the fix, but it doesn&#8217;t work for me.  Same/similar setup: Garmin 60CSx, Parallels latest version with WinXP VM, MacBook Pro Core 2 Duo running 10.4.9.</p>
+
+<p>I did a firmware update using the web updater. The update ran through to completion, I saw the &#8220;Loader&#8221; screen, &amp;c. on the GPS, then I got a <em>successful</em> completion message on the updater program under Windows, but the GPS went blank, and won&#8217;t power on.</p>
+
+<p>I&#8217;ve tried removing batteries and replacing with new (the &#8220;old&#8221; ones were almost-new), reboots, you name it.</p>
+
+<p>I really was hopeful your trick would work for me, but alas, the GPS won&#8217;t show up under USB.</p>
+
+<p>Sigh. I supposed this means I have to pay to have it fixed.  According to the Garmin web site, they won&#8217;t warranty failed firmware updates.</p>
+
+<p>What really frustrates me, is I&#8217;m a software engineer for a large printer company, and I design and implement the firmware update system for the printers among other jobs.  One key requirement is that the flash update must <em>always</em> fail into a user-recoverable mode for the system.  We use several methods &#8212; such as copying all the flash image data into RAM and CRC&#8217;ing it before we write a single byte into flash memory.  That way, even if communication is lost during data transfer, the device just reboots and no harm done.  Once flash write starts, all the I/O ports and protocols are disabled, along with all control buttons, so really only removing power during the write phaser could cause an incorrect flash image.  But even that wouldn&#8217;t toast the box.</p>
+
+<p>We also break the flash into several regions.  There&#8217;s a tiny, tiny boot loader that never gets overwritten, and it looks in two different places for the main boot loader, using an NVRAM bit to determine which is &#8220;preferred&#8221;, but it will CRC it before loading it and fail to the other location.</p>
+
+<p>The flash update program only overwrites the &#8220;old&#8221; bootloader, so there&#8217;s always one which has enough smarts to run USB and a flash loader.</p>
+
+<p>I guess Garmin hasn&#8217;t figured this all out yet.  Maybe they should hire me to consult. :-/</p>
+
+<p>KD</p>
+       </div>
+
+     </div>
+ </li>
+   <li class="comment even thread-even depth-1" id="li-comment-35">
+     <div id="comment-35">
+
+       <div class="comment-meta vcard">
+
+                   <cite class="fn">Bill</cite> <span class="says">said</span> on <a href="#comment-35">May 28, 2007</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>Kevin,</p>
+
+<p>That truly sucks. Perhaps I was just lucky in that the crazy contortionist keypad update worked for me.</p>
+
+<p>Before assuming you&#8217;ll have to pay for them fixing it, give their customer support number a call. They were super helpful and they <em>may</em> let you send it in without having to pay for the fix.</p>
+
+<p>Also, I&#8217;ve noticed that Garmin has released a Mac version of the WebUpdater, which you can download <a href="http://www8.garmin.com/support/collection.jsp?product=999-99999-27">here</a>. Who knows how it works, though.</p>
+
+<p>Good luck!</p>
+       </div>
+
+     </div>
+ </li>
+   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-36">
+     <div id="comment-36">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn">viking66</cite> <span class="says">said</span> on <a href="#comment-36">June 3, 2007</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>Thanks mate, you saved my bacon. that Vulcan nerve pinch did the trick. I was abl to escape the grey screen &#8216;o sadness; and re install the update.</p>
+       </div>
+
+     </div>
+ </li>
+   <li class="comment even thread-even depth-1" id="li-comment-37">
+     <div id="comment-37">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn">Reuben</cite> <span class="says">said</span> on <a href="#comment-37">June 24, 2007</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>Thank You!!!
+We weren&#8217;t about to send it back to Garmin to have them charge us to fix a problem with their updater software. The unit was packaged up to be returned to the reseller when I did one last websearch for a cure. Found your description of the problem (exactly what happened to us), and the instructions worked perfectly. Thank you again.</p>
+
+       </div>
+
+     </div>
+ </li>
+   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-38">
+     <div id="comment-38">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn">Stephen McCarthy</cite> <span class="says">said</span> on <a href="#comment-38">June 27, 2007</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>Bill,</p>
+
+<p>I&#8217;m enthused to run across your article while searching for any info on Macs working with Garmin.  I seem to have killed off my well-weathered GPSMap 60C in the same manner while connecting through Parallels.  Contacted Garmin support and they suggested I could reset by clearing out the system or send them $195 to do the same. I&#8217;m reluctant to do this as I&#8217;ve had the unit to Mt Everest, South Pacific, Iceland and many other cool places - I&#8217;m a documentary cinematographer - and I&#8217;ve lost track of which waypoints are backed up on the wife&#8217;s PC.  I think it&#8217;s an outrage that Garmin would 1.) promise full Mac compatibility in 2006 and simply let the matter drop when they failed to deliver, 2.)put purported firmware updates on their site which would, in fact, disable or destroy their devices and 3.) fail to make any attempt to remedy this situation pro-actively with impacted customers.  Fool that I am, I bought a new 60CSx simply becaus
+e a handheld GPS is essential to my work.  On the other hand, I&#8217;ll be damned if I&#8217;ll hook the thing up to my Mac any time soon.  In the past I must have sold a couple dozen 60Cs for Garmin simply by bringing it out on shoots.     I&#8217;m afraid I&#8217;m a little less than enthusiastic to give them any endorsements at this point.  I&#8217;ll give the finger-gymnastics method a try on the old 60C and let you know what comes of it.</p>
+
+<p>Yours in dumb luck and dead reckoning,</p>
+
+<p>SMc</p>
+       </div>
+
+     </div>
+ </li>
+   <li class="comment even thread-even depth-1" id="li-comment-39">
+     <div id="comment-39">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn"><a href='http://dcortesi.com' rel='external nofollow' class='url'>Damon</a></cite> <span class="says">said</span> on <a href="#comment-39">June 28, 2007</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>Bill,</p>
+
+<p>You&#8217;re a life saver!  I had this exact problem and yours is the only site I came across after a few google searches that even mentioned the symptoms.</p>
+
+<p>One note to Keven - it didn&#8217;t work for me at first either.  However, I noticed the screen only flickered for me directly after taking the batteries out and putting them back in, or after plugging in the usb. So I took the batteries out, unplugged usb, then put the batteries back in, plugged in the usb cable and tried the vulcan death grip, and voila - it appeared in the updater app.</p>
+
+<p>Bill - many thanks again!</p>
+
+<p>Damon</p>
+       </div>
+
+     </div>
+ </li>
+   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-40">
+     <div id="comment-40">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn">Paulo Ribeiro</cite> <span class="says">said</span> on <a href="#comment-40">July 6, 2007</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>My gosh! It fixed my GPS too!</p>
+       </div>
+
+     </div>
+ </li>
+   <li class="comment even thread-even depth-1" id="li-comment-41">
+     <div id="comment-41">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn"><a href='http://www.360geographics.com' rel='external nofollow' class='url'>Landis</a></cite> <span class="says">said</span> on <a href="#comment-41">July 18, 2007</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>My hand is frickin&#8217; killing me, but ya&#8217;ll have saved my 60CSx from being thrown out a window.  Damon&#8217;s hint to take out the batteries and put them back in right before doing this is what finally made it work for me.  Thanks to both of you!</p>
+
+<p>Parallels/WinXP.  The Mac version of the Garmin WebUpdated crashed a number of times.</p>
+
+<p>Garmin makes great GPSr&#8217;s, but they can&#8217;t seem to make software worth a damn.  MapSource is sorry.  Now I&#8217;ve got to figure out how to get the maps loaded - kept failing with the last version of firmware and I&#8217;m hoping this firmware update (3.3) will take care of that.</p>
+
+<p>Thanks again!</p>
+       </div>
+
+     </div>
+
+ </li>
+   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-42">
+     <div id="comment-42">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn">Mathias GrÃ¶nlund</cite> <span class="says">said</span> on <a href="#comment-42">July 30, 2007</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>Gah&#8230;I really thought this one would save my day. I&#8217;ve got the same problem with my GPSr, it&#8217;s completely dead.
+The problem occured when my batteries went out. The first time this happened all I had to was to plug it in to the computer and it restarted&#8230;.but now..*sighs..nothing.</p>
+
+<p>And next week I&#8217;m off the the Swedish mountains for a two week hike. Superb timing! =o/</p>
+
+<p>If anyone comes up with another solution please post here and send me a pm. =o)</p>
+
+<p>// Mathias &#8216;Greengrove&#8217; GrÃ¶nlund</p>
+       </div>
+
+     </div>
+ </li>
+   <li class="comment even thread-even depth-1" id="li-comment-43">
+     <div id="comment-43">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn"><a href='http://greengrove.se' rel='external nofollow' class='url'>Mathias GrÃ¶nlund</a></cite> <span class="says">said</span> on <a href="#comment-43">July 30, 2007</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>A little comment to the post above: I managed to do CPR on it (I hit it with all I had on the side) and it went on!
+Would still appreciate a more appropriate solution though hehe&#8230;</p>
+
+       </div>
+
+     </div>
+ </li>
+   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-44">
+     <div id="comment-44">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn">steve</cite> <span class="says">said</span> on <a href="#comment-44">August 9, 2007</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>Thanks - this advice saved my GPS the night before my hiking trip.  I had the same problem &amp; similar environment - macbook pro using parallels w/ winxp.  It took a few tries (first few times the until would not power on), but I was able to get the latest firmware (3.50) working.</p>
+       </div>
+
+     </div>
+ </li>
+   <li class="comment even thread-even depth-1" id="li-comment-45">
+
+     <div id="comment-45">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn">Walter Bauer</cite> <span class="says">said</span> on <a href="#comment-45">August 12, 2007</a>:
+                 </div>
+
+       <div class="comment-content">
+
+
+         <p>That tip saved my life. Tried unit software update with Mac and Parallels and my Vista HCx was dead afterwards. With the Power-Button &amp; Up-Key trick and WebUpdate (Mac Version this time) I was able to bring my Garmin back to live!</p>
+       </div>
+
+     </div>
+ </li>
+   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-46">
+     <div id="comment-46">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn">Otto</cite> <span class="says">said</span> on <a href="#comment-46">August 14, 2007</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>Thanks you very much&#8230;this saved my GPS!!!</p>
+
+<p>My unit came with version 330 software. I successfully updated it to v. 350. It failed when I aborted a map download, after discovering the maps I was attempting to use was not unlocked for my system.</p>
+
+<p>After reading your solution, I tried several times in vain to perform the fix with the v. 350 software, since it was the latest. Then finally, I gave the v. 330 a try - SUCCESS!!!</p>
+       </div>
+
+     </div>
+ </li>
+   <li class="comment even thread-even depth-1" id="li-comment-47">
+     <div id="comment-47">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn">left</cite> <span class="says">said</span> on <a href="#comment-47">August 17, 2007</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>You have not to hold 2 buttons all the time. The service mode turns on when you hold one of the ROKER key, press POWER, and stay to hold ROKER. You may to connect usb then, and start flash.</p>
+
+<p>Garminz used 2 loaders scheme, but it is sometimes has bugs. Software missing may apperar if Bootloader does not find appropriate signature on the firmware flash - for example not success loading. Simply rerun the updater and unit goes on.</p>
+       </div>
+
+     </div>
+ </li>
+   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-48">
+     <div id="comment-48">
+
+       <div class="comment-meta vcard">
+
+                   <cite class="fn">Graham</cite> <span class="says">said</span> on <a href="#comment-48">August 29, 2007</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>I had problems after deleting waypoints and routes from my CSX. Had to do without it during a cruise from Venice to Rome. Was cursing Garmin all the way. I contacted Garmin in Italy and the very nice guy emailed me back immediately. He said it needed to be reset by hold quit menu and zoom out buttons whilst pressing the power switch. I had to do it a couple of times due to lack of dexterity but sure enough up it comes. No problem. Why don&#8217;t they tell you about these things?</p>
+       </div>
+
+     </div>
+ </li>
+   <li class="comment even thread-even depth-1" id="li-comment-49">
+     <div id="comment-49">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn">John</cite> <span class="says">said</span> on <a href="#comment-49">September 3, 2007</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>At last!
+After what felt like 296 attempts it worked! I don&#8217;t know what did it, but the last time I tried, I changed the USB-port..   So now the 3.30 edition is well in place.
+Thanks a lot for the tip!!</p>
+       </div>
+
+     </div>
+ </li>
+   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-50">
+     <div id="comment-50">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn">marco</cite> <span class="says">said</span> on <a href="#comment-50">September 4, 2007</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>&#8230;I love you!!! at the third time it works&#8230;</p>
+
+<p>thanks a lot!!!!</p>
+       </div>
+
+     </div>
+ </li>
+   <li class="comment even thread-even depth-1" id="li-comment-51">
+     <div id="comment-51">
+
+       <div class="comment-meta vcard">
+
+                   <cite class="fn">Salvatore</cite> <span class="says">said</span> on <a href="#comment-51">September 14, 2007</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>a primo colpo tutto ok&#8230;.. tasto entr+up+on e il software Updater ha riconosciuto il gps&#8230;waw!!!</p>
+
+       </div>
+
+     </div>
+ </li>
+   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-52">
+     <div id="comment-52">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn">Salvatore</cite> <span class="says">said</span> on <a href="#comment-52">September 14, 2007</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>vi ringrazio di cuore&#8230;ero disperato&#8230;il mio gpsmap 60csx Ã¨ come nuovo firmware v3.50</p>
+       </div>
+
+     </div>
+ </li>
+   <li class="comment even thread-even depth-1" id="li-comment-53">
+
+     <div id="comment-53">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn">Andi</cite> <span class="says">said</span> on <a href="#comment-53">September 25, 2007</a>:
+                 </div>
+
+       <div class="comment-content">
+
+
+         <p>THANKS HEAPS !!! My 60C works again ! It suddenly won&#8217;t startup with no apparent reason.</p>
+       </div>
+
+     </div>
+ </li>
+   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-54">
+     <div id="comment-54">
+
+       <div class="comment-meta vcard">
+
+                   <cite class="fn">Ryan</cite> <span class="says">said</span> on <a href="#comment-54">November 30, 2007</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>THANK YOU SOOOOO MUCH!!! Its 1 am and I am preparing for a geocache run, figured I would update real quick and head up to bed. Flashed the GPS and then nothing. I may not be able to open a cache container tomorrow because of the sore hands but I will at least be able to cache!! Thanks</p>
+       </div>
+
+     </div>
+ </li>
+   <li class="comment even thread-even depth-1" id="li-comment-55">
+     <div id="comment-55">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn"><a href='http://molesthoughts.wordpress.com/' rel='external nofollow' class='url'>Scott</a></cite> <span class="says">said</span> on <a href="#comment-55">December 19, 2007</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>After several failed attempts, through Parallels using the Windows Updater, I tried it using the Mac Webupdater and after the second attempt&#8230; Lo and Behold, it WORKED!  Thanks for posting this tip.  I thought I had a couple hundred dollar paperweight on my hands.  Much obliged.</p>
+       </div>
+
+     </div>
+ </li>
+   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-56">
+
+     <div id="comment-56">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn">Roland</cite> <span class="says">said</span> on <a href="#comment-56">December 30, 2007</a>:
+                 </div>
+
+       <div class="comment-content">
+
+
+         <p>Thanks!!!!! The procedure worked for my Quest! Great!</p>
+       </div>
+
+     </div>
+ </li>
+   <li class="comment even thread-even depth-1" id="li-comment-57">
+     <div id="comment-57">
+
+       <div class="comment-meta vcard">
+
+                   <cite class="fn">Christoph Schifferli</cite> <span class="says">said</span> on <a href="#comment-57">February 9, 2008</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>thanks for getting me out of trouble!</p>
+
+<p>For Mac Users: a Mac OS X webupdater is now available.
+I probably got this problem because I was running it from a &#8220;Parallels Desktop&#8221; environment, where the USB connection may not be stable enough.</p>
+
+       </div>
+
+     </div>
+ </li>
+   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-58">
+     <div id="comment-58">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn"><a href='http://leevigraham.com' rel='external nofollow' class='url'>Leevi Graham</a></cite> <span class="says">said</span> on <a href="#comment-58">March 7, 2008</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>Worked for me as well but only after using Damons battery in / out usb in /out technique.</p>
+
+       </div>
+
+     </div>
+ </li>
+   <li class="comment even thread-even depth-1" id="li-comment-59">
+
+     <div id="comment-59">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn">Alexey</cite> <span class="says">said</span> on <a href="#comment-59">April 8, 2008</a>:
+                 </div>
+
+       <div class="comment-content">
+
+
+         <p>Thanks!!!!! The procedure worked for my GPSmap 276c! Great!</p>
+       </div>
+
+     </div>
+ </li>
+   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-60">
+     <div id="comment-60">
+
+       <div class="comment-meta vcard">
+
+                   <cite class="fn">Simon</cite> <span class="says">said</span> on <a href="#comment-60">May 12, 2008</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>&#8230;unfortunately with my eTrex Vista HCx it&#8217;s not working. Any other suggestions?
+My problem started after an software update from 2.50 to 2.60. What ever I do, it&#8217;s not turning on.</p>
+
+       </div>
+
+     </div>
+ </li>
+   <li class="comment even thread-even depth-1" id="li-comment-61">
+     <div id="comment-61">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn">Matt</cite> <span class="says">said</span> on <a href="#comment-61">May 18, 2008</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>Thank you sir! Worked on my GPSMAP70 when I thoughts all was lost! Made my day, thanks for posting!</p>
+       </div>
+
+     </div>
+ </li>
+   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-62">
+     <div id="comment-62">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn">Yves</cite> <span class="says">said</span> on <a href="#comment-62">May 25, 2008</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>Doesn&#8217;t work for me :-(
+What I found out is that wenn I Update and pull out the usb after erasing message disapers, my 60CS works find exept displaying that it has no software. After updating, the screen is blank again. So the Unit ist working but not with the software in it??
+Has anyone got an idea on how to solve this? Thx</p>
+
+       </div>
+
+     </div>
+ </li>
+   <li class="comment even thread-even depth-1" id="li-comment-63">
+     <div id="comment-63">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn">tony southern</cite> <span class="says">said</span> on <a href="#comment-63">June 10, 2008</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>Tried the above suggestions after webupdater fried my 60csx today. Given the comments about holding down GPS buttons for &#8216;ages&#8217;, I wonder if a serial connection was used by you lucky folk. (I dont own a serial cable (yet)). windows doesnt find a USB device when the GPS is plugged in.</p>
+       </div>
+
+     </div>
+ </li>
+   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-64">
+
+     <div id="comment-64">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn">Tony Southern</cite> <span class="says">said</span> on <a href="#comment-64">June 10, 2008</a>:
+                 </div>
+
+       <div class="comment-content">
+
+
+         <p>I will answer my own question..</p>
+
+<p>Yes it was serial communication, yes you can do it with clippy leads if you dont have a garmin serial cable
+yes, you fingers get sore after 10 mins - but
+YES IT WORKS!!!!</p>
+
+<p>All good, and I promise NEVER to use that evil webupdater ever again.</p>
+       </div>
+
+     </div>
+ </li>
+   <li class="comment even thread-even depth-1" id="li-comment-65">
+
+     <div id="comment-65">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn">Adrian Stone</cite> <span class="says">said</span> on <a href="#comment-65">June 13, 2008</a>:
+                 </div>
+
+       <div class="comment-content">
+
+
+         <p>What are clippy leads?  My Garmin Quest seems to have got frozen and nothing I have tried will release it typically a week before a trip to Europe.</p>
+       </div>
+
+     </div>
+ </li>
+   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-66">
+     <div id="comment-66">
+
+       <div class="comment-meta vcard">
+
+                   <cite class="fn">Adrian Stone</cite> <span class="says">said</span> on <a href="#comment-66">June 13, 2008</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>What are clippy leads?  My Garmin Quest seems to have got frozen and nothing I have tried will release it typically a week before a trip to Europe.</p>
+       </div>
+
+     </div>
+ </li>
+   <li class="comment even thread-even depth-1" id="li-comment-67">
+     <div id="comment-67">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn">Adrian Stone</cite> <span class="says">said</span> on <a href="#comment-67">June 13, 2008</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>What are clippy leads?  My Garmin Quest seems to have got frozen and nothing I have tried will release it typically a week before a trip to Europe.</p>
+       </div>
+
+     </div>
+ </li>
+   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-68">
+     <div id="comment-68">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn">Bryan</cite> <span class="says">said</span> on <a href="#comment-68">June 15, 2008</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>tried the fix without success.  The updater successfully &#8220;updates&#8221; my 60CSX, but upon completion, the unit powers up to the title screen and after about 3 seconds, fades to nothing.  If you hold down the power button continuously, the title screen remains unchanged but as soon as you release it, the unit fades to nothing.  Any other suggestions from anyone before I take the official Garmin route.  This problem began without having been connected to a computer for some months.  I&#8217;m at a loss since it appears to have come just out of the blue.  Bryan</p>
+
+       </div>
+
+     </div>
+ </li>
+   <li class="comment even thread-even depth-1" id="li-comment-69">
+     <div id="comment-69">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn">James</cite> <span class="says">said</span> on <a href="#comment-69">June 17, 2008</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>Had the same issue as Bryan above.  Called Garmin as was told to remove the SD card.  Now it works.
+For some reason after I updated the City Navigator North America NT to 2009 it must have affected the SD card.</p>
+       </div>
+
+     </div>
+ </li>
+   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-70">
+     <div id="comment-70">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn">James</cite> <span class="says">said</span> on <a href="#comment-70">June 18, 2008</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>Update to last comment.
+Ok, put in another SD card then loaded the maps.  Same thing again!  So I put the Garmin 60 CSx in mass media mode then reformatted the SD card.  Now it started up and stays on with the SD card inserted. Reloaded the maps and it works fine now.
+Bryan I hope that you read this before you send it in.</p>
+
+       </div>
+
+     </div>
+ </li>
+   <li class="comment even thread-even depth-1" id="li-comment-71">
+     <div id="comment-71">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn">Bob Strenger</cite> <span class="says">said</span> on <a href="#comment-71">June 24, 2008</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>I just wanted to help out anyone who had this problem occur with a Etrex Venture HC. I couldn&#8217;t find anything relating to this problem except for this feed. Basically when updating via the Mac OS X Web Updater, my Venture HC hung on the update and I was forced to unplug it after 30 minutes of waiting. Then it wouldn&#8217;t turn on. Just flickered when I removed and replaced the batteries and pressed the power button. Sounded exactly like the problem people with 60CSX&#8217;s were having. The software is nearly identical between the units. So I pressed and held down the joystick (as you would to select a menu item) and while continuing to hold the joystick button, then I pressed and held down the power button. The screen flickered briefly. Now while I continued to hold these 2 buttons, I clicked the Find Devices button in the Web Updater and low and behold it flippin&#8217; found the device! So while still holding the joystick and power buttons, I clicked t
+he update button (or whatever the button said that started the update) and it updated the unit and my Venture HC WORKS!!! Hope this helps others.</p>
+       </div>
+
+     </div>
+ </li>
+
+   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-72">
+     <div id="comment-72">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn"><a href='http://noworkingforme' rel='external nofollow' class='url'>rav</a></cite> <span class="says">said</span> on <a href="#comment-72">July 4, 2008</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>I got 60csx v 3.60
+I tried update both  firmawre and software for gps reciever (ver G) with no succes
+w or w/o micro SD card
+still got sw 0.00
+device is seen by webupdate
+any help</p>
+
+<p>THA</p>
+
+<p>R</p>
+       </div>
+
+     </div>
+ </li>
+
+   <li class="comment even thread-even depth-1" id="li-comment-73">
+     <div id="comment-73">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn">Steve in AZ</cite> <span class="says">said</span> on <a href="#comment-73">August 3, 2008</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>Worked for an Etrex Vista (non color.)
+unplug usb-to-serial adapter, remove batteries &amp; replace, replug-in adapter.
+Hold joystick up, hit power and released while holding the joystick up the entire time.  Updater software searched for new com port, found.  Asked if I wanted to overwrite the firmware - said yes. It went through the sequence to success.</p>
+
+<p>Bill, you ROCK!</p>
+       </div>
+
+     </div>
+ </li>
+
+   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-74">
+     <div id="comment-74">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn">Ernie</cite> <span class="says">said</span> on <a href="#comment-74">August 7, 2008</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>Thanks so much for your help.   I thought my unit was toast.    You brought a couple hundred dollar brick back to life.   Thanks for taking the time to share your experience, I wish there were more people who would take the time to explain things as you do.   Thanks!</p>
+       </div>
+
+     </div>
+ </li>
+   <li class="comment even thread-even depth-1" id="li-comment-75">
+     <div id="comment-75">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn">Gasha</cite> <span class="says">said</span> on <a href="#comment-75">August 19, 2008</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>I&#8217;m still trying to get my Legend CX back to life. It lost Software, and failed when i reloaded firmware.</p>
+
+       </div>
+
+     </div>
+ </li>
+   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-76">
+     <div id="comment-76">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn">Adam</cite> <span class="says">said</span> on <a href="#comment-76">August 30, 2008</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>Im having the same trouble with my Garmin GPS 60, its dead and wont start. any ideas what i can do short of destroying it??</p>
+       </div>
+
+     </div>
+ </li>
+   <li class="comment even thread-even depth-1" id="li-comment-77">
+     <div id="comment-77">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn">Mark</cite> <span class="says">said</span> on <a href="#comment-77">September 5, 2008</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>Thanks very much for this information. It worked first time.</p>
+
+       </div>
+
+     </div>
+ </li>
+   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-78">
+     <div id="comment-78">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn">AndrÃ©s</cite> <span class="says">said</span> on <a href="#comment-78">September 16, 2008</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>I Have a GPSMAP 420S, this unit only have SD CARD slot, not USB. Anyone know how can I reload Firmware? I upgraded to version 4.1 and the unit now only shows Garmin Welcome screen and &#8220;Updating Software&#8221;, but never ends.
+Please Help!! It&#8217;s my fathers GPS and Him will kill me if i don&#8217;t fix it!</p>
+       </div>
+
+     </div>
+ </li>
+
+   <li class="comment even thread-even depth-1" id="li-comment-79">
+     <div id="comment-79">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn">Michael</cite> <span class="says">said</span> on <a href="#comment-79">September 20, 2008</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>This brought my eTrex Venture HC back to life, but webupdater still hangs on the &#8220;loader&#8221;.  The key combination is power   enter</p>
+       </div>
+
+     </div>
+ </li>
+   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-80">
+     <div id="comment-80">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn">Borex</cite> <span class="says">said</span> on <a href="#comment-80">October 12, 2008</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>Hello I tried and not work for me, I have 276câ€¦ itself the procediientos so what but nothing when finishing the installation of the update my gps does not initiate it is in the beginning screen that is a little opaque&#8230;</p>
+
+       </div>
+
+     </div>
+ </li>
+   <li class="comment even thread-even depth-1" id="li-comment-81">
+     <div id="comment-81">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn">craig</cite> <span class="says">said</span> on <a href="#comment-81">November 5, 2008</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>I had problems with my eTrex HC and the Mac web updater hanging on &#8220;loader&#8221;.  The Garmin Mac support in Canada told me that the unit and not the uppdater were at fault.  So I exchanged the unit and same problem occured!  I pressed power and pushed up on rocker key, the Mac uppdater recognized the unit but after three attempts still would hang on loader. I solved the problem by using the above method and getting hold of a Win PC with success, thanks</p>
+       </div>
+
+     </div>
+ </li>
+   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-82">
+
+     <div id="comment-82">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn">Andreas</cite> <span class="says">said</span> on <a href="#comment-82">December 5, 2008</a>:
+                 </div>
+
+       <div class="comment-content">
+
+
+         <p>Just picked up a Venture HC and used the Mac web updater. It seemed to hang forever on the loader screen. Finally after finding this site I was able to get something loaded. I just let it sit until I saw a black screen with the Garmin logo. Unplugged and pressed power to shut it off, then powered it up, and it was like nothing had ever happened. All my settings are still there, and it acts like it is A-OK. Somebody at Garmin is slacking in their programing department. Might try booting to Win XP and reloading to make sure.</p>
+       </div>
+
+     </div>
+ </li>
+   <li class="comment even thread-even depth-1" id="li-comment-83">
+     <div id="comment-83">
+
+       <div class="comment-meta vcard">
+
+                   <cite class="fn">alex</cite> <span class="says">said</span> on <a href="#comment-83">December 24, 2008</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>hi to all i have a venture Cx that went dead on me &#8230; the batt. are good and the power is on usb too i just updated it recently and turned it off and dosnet power on anny more ive tryed all kinds of button codes but nothing works its dead maybe im not doing ot right can some one please tell me the proper code to press for a venture Cx ? thx greatly apresheated.</p>
+
+       </div>
+
+     </div>
+ </li>
+   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-84">
+     <div id="comment-84">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn">g</cite> <span class="says">said</span> on <a href="#comment-84">December 31, 2008</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>I hadn&#8217;t used my 60CSx for a couple months now and popped new batteries in. Turned it on and wouldn&#8217;t turn off so I removed the batteries and then was unable to turn it back (tried for over an hour). Tried your tip several times and with different buttons and nothing. Started reading the comments and came across Mathias&#8217;s post. Gave it a good open hand slap on the side and it turned on immediately (should&#8217;ve trusted my gut instinct). Still going to contact Garmin but for now it works good enough. Thanks for the help.</p>
+       </div>
+
+     </div>
+ </li>
+
+   <li class="comment even thread-even depth-1" id="li-comment-85">
+     <div id="comment-85">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn">Trent</cite> <span class="says">said</span> on <a href="#comment-85">January 24, 2009</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>Thanks so much! It worked on my eTrex Venture HC! It wouldn&#8217;t turn on after a failed firmware update. I was almost ready to pay $100 to get it fixed, and then I found this site!</p>
+       </div>
+
+     </div>
+ </li>
+   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-86">
+     <div id="comment-86">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn"><a href='http://www.doc.govt.nz' rel='external nofollow' class='url'>Kerry Jones</a></cite> <span class="says">said</span> on <a href="#comment-86">February 9, 2009</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>Hi,</p>
+
+<p>I had a GPSmap 60Cx that started playing up after the battery went dead. The first symptom was that the maps on the card disappeared then it froze after deleting a waypoint on an active route.
+After that I got the welcome screen and it froze there. Only way of switching off was to remove the batteries. I downloaded the Garmin WebUpdater application and upgraded from 3.50 to 3.70 using the on button and up arrow trick. When that had completed doing its thing. I held my breath and tried to switch on but it still froze on the welcome screen. I then tried the &#8216;Master Reset&#8217; (Turn on while holding Page and Enter down).  This brought up the &#8216;Do you wish to delete all user data prompt&#8217; but it froze at that screen (left/right/enter buttons didn&#8217;t do anything. I tried the master reset again but as soon as the &#8216;Do you wish to delete all user data prompt&#8217; screen came up I pressed right arrow and enter really quickly and the reset process completed and then it rebooted as normal and the satellite page appeared making me very happy.  I am not sure if it was the quick button pressing on the master reset or the upgrade from 3.50 to 3.70 t
+hat fixed it but I got there in the end.</p>
+
+<p>Thanks to all those who posted on this page.</p>
+
+<p>Kerry Jones</p>
+       </div>
+
+     </div>
+ </li>
+   <li class="comment even thread-even depth-1" id="li-comment-202">
+     <div id="comment-202">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn">paulo</cite> <span class="says">said</span> on <a href="#comment-202">April 13, 2009</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>you saved my gps and some money for me, many thanks.
+my gps 60csx</p>
+       </div>
+
+     </div>
+ </li>
+   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-208">
+     <div id="comment-208">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn">DiverCTH</cite> <span class="says">said</span> on <a href="#comment-208">April 18, 2009</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>I was updating from 3.70 to 3.90 when the webupdate crapped out on me.  Your solution worked flawlessly.  Thanks for saving my unit!</p>
+
+       </div>
+
+     </div>
+ </li>
+   <li class="comment even thread-even depth-1" id="li-comment-211">
+     <div id="comment-211">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn">Ryan A</cite> <span class="says">said</span> on <a href="#comment-211">April 20, 2009</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>Thanks! You saved me a lot of dough! It crapped out while webupdating from 3.7 to 3.9. And just 7 weeks before a 2 week camping trip! God bless you!</p>
+       </div>
+
+     </div>
+ </li>
+   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-276">
+     <div id="comment-276">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn">Francisco Javier Dominguez Rogers</cite> <span class="says">said</span> on <a href="#comment-276">June 3, 2009</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>Hello:</p>
+
+<p>DO NOT UPTATE THE FIRMWARE TO V3.9 from web-updater.</p>
+
+<p>This new software have a lot of issues, like a continuos beep after turn off, or reinstall all the information contained in the micro sd card.</p>
+
+<p>Maintain in 3.7 version.</p>
+
+<p>Sheers</p>
+       </div>
+
+     </div>
+
+ </li>
+   <li class="comment even thread-even depth-1" id="li-comment-277">
+     <div id="comment-277">
+
+       <div class="comment-meta vcard">
+                   <cite class="fn">Jason</cite> <span class="says">said</span> on <a href="#comment-277">July 31, 2009</a>:
+                 </div>
+
+       <div class="comment-content">
+
+         <p>This worked great on my Venture HC.  !!</p>
+       </div>
+
+     </div>
+ </li>
+     </ol>
+
+       </div>
+         </div>
+
+
+           </div>
+     <!-- Main Content Ends -->
+
+     </div>
+
+     </body>
+</html>

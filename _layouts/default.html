@@ -111,6 +111,9 @@
           $("a.icon-link").click( function(e) {
             _gaq.push(['_trackEvent', 'External Links', 'Click', $(this).html()]);
           });
+          $("a", "ul.friend-links").click( function(e) {
+            _gaq.push(['_trackEvent', 'Friend Links', 'Click', $(this).html()]);
+          });
         });
       //]]>
     </script>
