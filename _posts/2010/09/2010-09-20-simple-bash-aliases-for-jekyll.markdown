@@ -19,7 +19,7 @@ As I get a little more comfortable with how [Jekyll](http://github.com/mojombo/j
     alias buildblog="cd ~/code/blog && rm -rf _site/ && jekyll"
   
     # use rsync to push the weblog to my host
-    alias deployblog="rsync -rtz --delete _site/ username@host.com:~/path/to/weblog/root/"
+    alias deployblog="cd ~/code/blog && rsync -rtz --delete _site/ username@host.com:~/path/to/weblog/root/"
 
 Each of these assume a little on how you have Jekyll configured, so you will have to adjust each for your own setup. You can see [my own configuration options on Github](http://github.com/billturner/brilliantcorners.org/blob/master/_config.yml "Link to my own Jekyll configuration file.").
 
