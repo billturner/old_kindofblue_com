@@ -3,7 +3,7 @@ layout: default
 title: Bill Turner's Weblog
 ---
 
-{% for post in site.posts %}
+{% for post in paginator.posts %}
   <article class="post">
 
     <h3><a href="{{ site.url }}{{ post.url }}" rel="bookmark permalink" title="Permanent link to this post">{{ post.title }}</a></h3>
@@ -25,3 +25,17 @@ title: Bill Turner's Weblog
   </article>
   
 {% endfor %}
+
+<div class="pagination">
+ <div class="next-page">
+    {% if paginator.next_page %}
+      <a href="{{ site.url }}/page{{ paginator.next_page }}/">&laquo; Older Posts</a>
+    {% endif %}
+  </div>
+  <div class="previous-page">
+    {% if paginator.previous_page %}
+      <a href="{{ site.url }}{% if paginator.previous_page == 1 %}/{% else %}/page{{ paginator.previous_page }}/{% endif %}">Newer Posts &raquo;</a>
+    {% endif %}
+  </div>
+</div>
+

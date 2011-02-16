@@ -2,7 +2,7 @@ body { text-align: center; }
 
 .container { margin: 10px auto; }
 
-code { font-family: "Courier New", Courier, monospace; line-height: 1.2; }
+code { font-family: "Courier New", Courier, monospace; line-height: 1.2; margin-right: 2px; }
 
 pre { padding: 10px; overflow: auto; width: 95%; background: #eee; color: #000; }
 
@@ -47,6 +47,7 @@ ul.links li.last:after, ul.links li.first:after { content: '  '; }
 a.icon-link { padding: 1px 1px 1px 21px; text-align: left; }
 a#feed-link { background: url("/images/feedicon16.png") center left no-repeat; }
 a#flickr-link { background: url("/images/flickr-icon.png") center left no-repeat; }
+a#pinboard-link { background: url("/images/pinboard-icon.gif") center left no-repeat; }
 a#tumblr-link { background: url("/images/tumblr-icon.png") center left no-repeat; }
 a#github-link { background: url("/images/github-icon.png") center left no-repeat; }
 a#twitter-link { background: url("/images/twitter-icon.png") center left no-repeat; }
@@ -56,5 +57,6 @@ a#gmail-link { background: url("/images/gmail-icon.png") center left no-repeat; 
 a#skype-link { background: url("/images/skype-icon.png") center left no-repeat; }
 
 .pagination { font-size: 1.2em; width: 99%; margin: 10px; }
-.pagination .previous_link { float: left; padding-left: 25px; }
-.pagination .next_link { float: right; padding-right: 25px; }
+.pagination .next-page { float: left; padding-left: 10px; }
+.pagination .previous-page { float: right; padding-right: 10px; }
+
