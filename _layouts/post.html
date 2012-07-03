@@ -12,7 +12,7 @@ layout: default
     {% if page.tags.size > 0 %}
       &mdash;
       {% for tag in page.tags %}
-        <a href="http://google.com/#q=site:{{ site.url | remove:'http://' }}+{{ tag | downcase | replace:' ','+' }}" rel="tag category" title="Search this site for other posts on {{ tag | downcase | escape }} (using Google)">#{{tag | downcase}}</a>
+        <a href="/tag/{{ tag | downcase | replace:' ','_' }}/" rel="tag category" title="Search this site for other posts on {{ tag | downcase | escape }}">#{{tag | downcase}}</a>
       {% endfor %}
     {% endif %}
   </div>
@@ -21,12 +21,13 @@ layout: default
 
 <div id="disqus_thread"></div>
 <script type="text/javascript">
-  var disqus_url = '{{ site.url }}{{ page.url }}';
+  var disqus_shortname = 'brilliantcorners';
+
   (function() {
-   var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-   dsq.src = 'http://brilliantcorners.disqus.com/embed.js';
-   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=brilliantcorners">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>

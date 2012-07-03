@@ -27,6 +27,14 @@ layout: nil
     <changefreq>monthly</changefreq>
     <priority>0.2</priority>
   </url>
+  {% for tag in site.tags %}
+    <url>
+      <loc>{{ site.url }}/tag/{{ tag[0] | downcase | replace: ' ', '_' }}/</loc>
+      <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.2</priority>
+    </url>
+  {% endfor %}
   {% for post in site.posts %}
     <url>
       <loc>{{ site.url }}{{ post.url }}</loc>
@@ -36,4 +44,3 @@ layout: nil
     </url>
   {% endfor %}
 </urlset>
-
