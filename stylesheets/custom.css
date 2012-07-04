@@ -46,6 +46,7 @@ ul.links li.last:after, ul.links li.first:after { content: '  '; }
 
 a.icon-link { padding: 1px 1px 1px 21px; text-align: left; }
 a#feed-link { background: url("/images/feedicon16.png") center left no-repeat; }
+a#mlkshk-link { background: url("/images/mlkshk-icon.png") center left no-repeat; }
 a#flickr-link { background: url("/images/flickr-icon.png") center left no-repeat; }
 a#pinboard-link { background: url("/images/pinboard-icon.gif") center left no-repeat; }
 a#tumblr-link { background: url("/images/tumblr-icon.png") center left no-repeat; }

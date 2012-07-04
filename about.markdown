@@ -4,10 +4,10 @@ title: About
 ---
 **About Me**
 
-I am a father, a husband, a web app developer, and a Texan living in Pittsburgh, PA.
+I am a father, a husband, a developer, and a Texan living in Pittsburgh, PA. I'm currently employed as a Ruby on Rails application developer by the nice folks at [CloudPassage](http://cloudpassage.com/). We're doing some really neat stuff with cloud server security. Check us out!
 
 **About the site**
 
-<del>This incarnation of Brilliant Corners runs on home-brewed weblog software written in [Ruby](http://ruby-lang.org/ "The Ruby Language home page") using [Sinatra](http://www.sinatrarb.com/ "The Sinatra home page"). Other things used for the weblog are [MongoDB](http://mongodb.org/ "The MongoDB home page") and [mongomapper](http://github.com/jnunemaker/mongomapper/ "The mongo_mapper GitHub repository") for data storage, [Haml](http://haml-lang.com/ "The Haml home page") for layout markup, [Sass](http://sass-lang.com/ "The Sass home page") for stylesheets, [rdiscount](http://github.com/rtomayko/rdiscount "The rdiscount GitHub repository") for [Markdown](http://daringfireball.net/projects/markdown/ "The Markdown home page") parsing, and [Disqus](http://disqus.com/ "The Disqus comments home page") for comments. The source for the weblog app is available for your own modification and use at [GitHub](http://github.com/ "Super awesome git repository hosting"): [thelonious](http://github.com/billturner/thelonious "The source code repository for this weblog app").</del>
+The current version of this weblog is built using [Jekyll](https://github.com/mojombo/jekyll). The source for any custom site code and the posts resides [in a repository on GitHub](https://github.com/billturner/brilliantcorners.org). Previous incarnations have used [Greymatter](http://en.wikipedia.org/wiki/Greymatter_\(software\)), [Drupal](http://drupal.org/), [Blogger](http://blogger.com/), [Wordpress](http://wordpress.org/), [Bloxsom](http://www.blosxom.com/), and various home-rolled implementations written in Perl, Merb, Sinatra, and Ruby on Rails (not necessarily in that order).
 
 The name, Brilliant Corners, comes from the [Thelonious Monk album](http://www.amazon.com/gp/product/B0012S59ZU?ie=UTF8&tag=billturner&linkCode=as2&camp=1789&creative=390957&creativeASIN=B0012S59ZU "Buy this wonderful album, via Amazon.com") of the same name. Other than being named after the album, there is no specific meaning behind the name.
