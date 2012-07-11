@@ -101,6 +101,18 @@
           $("a", "ul.friend-links").click( function(e) {
             _gaq.push(['_trackEvent', 'Friend Links', 'Click', $(this).html()]);
           });
+          $(".fancybox").fancybox({
+            closeClick: true,
+            closeBtn: true,
+            keys: {
+              close: [27]
+            },
+            helpers: {
+              title: {
+                type: "inside"
+              }
+            }
+          });
         });
       //]]>
     </script>
