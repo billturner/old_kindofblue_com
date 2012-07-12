@@ -10,7 +10,7 @@ module Jekyll
       self.data['tag'] = tag
       tag_title_prefix = site.config['tag_title_prefix'] || 'Posts tagged &ldquo;'
       tag_title_suffix = site.config['tag_title_suffix'] || '&rdquo;'
-      self.data['title'] = "#{tag_title_prefix}#{tag.gsub("_", " ")}#{tag_title_suffix}"
+      self.data['title'] = "#{tag_title_prefix}#{tag.gsub("-", " ")}#{tag_title_suffix}"
     end
   end
   class TagGenerator < Generator
@@ -30,7 +30,7 @@ module Jekyll
       site.pages << index
     end
     def clean_tag_name(t)
-      t.gsub(" ", "_")
+      t.gsub(" ", "-")
     end
   end
 end

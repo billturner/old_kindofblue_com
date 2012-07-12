@@ -29,7 +29,7 @@ layout: nil
   </url>
   {% for tag in site.tags %}
     <url>
-      <loc>{{ site.url }}/tag/{{ tag[0] | downcase | replace: ' ', '_' }}/</loc>
+      <loc>{{ site.url }}/tag/{{ tag[0] | downcase | replace: ' ', '-' }}/</loc>
       <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.2</priority>
