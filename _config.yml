@@ -12,6 +12,4 @@ permalink: /:year/:month/:title
 markdown: rdiscount
 pygments: false
 
-exclude:
-  - README.markdown
-  - _drafts
+exclude: ['README.markdown', '_drafts', 'Gemfile', 'Gemfile.lock', '.rvmrc', '.gitignore']
