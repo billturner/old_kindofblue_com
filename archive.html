@@ -1,8 +1,13 @@
 ---
 layout: page
-title: Archive of All Posts
+title: Archives
 ---
 <ul class="archive">
+  <h3>Tags used in posts</h3>
+
+  {% tag_list %}
+
+  <h3>All archived posts</h3>
   {% for post in site.posts %}
     <li>
       <a href="{{ site.url }}{{ post.url }}" title="{{ post.title | escape }}" rel="bookmark">{{ post.title }}</a> &mdash; {{ post.date | date: "%Y-%m-%d" }}
