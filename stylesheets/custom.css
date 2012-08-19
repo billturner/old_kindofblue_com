@@ -16,9 +16,9 @@ article { margin-bottom: 45px; }
 .post { font-size: 1.2em; }
 .post h3 { margin: 10px 0; }
 .post .postbody { font-family: Georgia, "Times New Roman", serif; }
-.post .meta { padding: 0 0 5px 0; font-size: 1.1em; color: #696969; }
+.post .meta { padding: 0 0 5px 0; font-size: 1.0em; color: #696969; }
 .post .meta a { color: #696969; text-decoration: none; }
-.post .meta a:hover { color: #333; }
+.post .meta a:hover { color: #333; text-decoration: underline; }
 
 ul.pager { text-align: center; font-size: 1.1em; }
 ul.pager li { display: inline; margin-right: 5px; }
