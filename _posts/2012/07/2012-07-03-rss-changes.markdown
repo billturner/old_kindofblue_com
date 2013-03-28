@@ -2,7 +2,7 @@
 layout: post
 date: 2012-07-03T20:29:00-05:00
 title: RSS changes
-excerpt: Since I plan to write more, I'm updating a few things - starting with the RSS feed.
+description: Since I plan to write more, I'm updating a few things - starting with the RSS feed.
 tags:
 - site news
 ---

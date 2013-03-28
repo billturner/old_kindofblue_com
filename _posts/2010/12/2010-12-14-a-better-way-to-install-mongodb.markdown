@@ -2,7 +2,7 @@
 layout: post
 date: 2010-12-14T18:10:00-05:00
 title: A better way to install MongoDB on Ubuntu
-excerpt: An update to the other instructions here on the site
+description: An update to the other instructions here on the site
 tags:
 - mongodb
 - ubuntu

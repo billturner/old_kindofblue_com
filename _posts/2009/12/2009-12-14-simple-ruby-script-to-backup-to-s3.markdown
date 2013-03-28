@@ -2,7 +2,7 @@
 layout: post
 date: 2009-12-14T21:22:20-05:00
 title: A simple Ruby script for backing up files to Amazon S3
-excerpt: I wrote a simple Ruby script to back up many types of files to an Amazon S3 buckets.
+description: I wrote a simple Ruby script to back up many types of files to an Amazon S3 buckets.
 tags:
 - ruby
 - system administration

@@ -2,7 +2,7 @@
 layout: post
 date: 2012-08-19T15:29:00-05:00
 title: "A relaunch, and a sketch"
-excerpt: "I start posting interviews again, and another Everyday Matters challenge sketch."
+description: "I start posting interviews again, and another Everyday Matters challenge sketch."
 tags:
 - art
 - projects

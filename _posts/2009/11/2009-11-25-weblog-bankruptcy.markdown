@@ -2,7 +2,7 @@
 layout: post
 date: 2009-11-25T01:14:05-05:00
 title: Weblog bankruptcy
-excerpt: I deleted all my old weblog posts when moving onto a new weblog system.
+description: I deleted all my old weblog posts when moving onto a new weblog system.
 tags:
 - site news
 ---

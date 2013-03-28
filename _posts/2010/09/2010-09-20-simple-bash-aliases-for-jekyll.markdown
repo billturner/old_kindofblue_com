@@ -2,7 +2,7 @@
 layout: post
 date: 2010-09-20T22:01:00-05:00
 title: Simple bash aliases for Jekyll
-excerpt: Some bash aliases to help make blogging with Jekyll a little easier
+description: Some bash aliases to help make blogging with Jekyll a little easier
 tags:
 - jekyll
 - bash

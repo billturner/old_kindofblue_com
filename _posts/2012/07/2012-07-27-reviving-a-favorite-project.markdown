@@ -2,7 +2,7 @@
 layout: post
 date: 2012-07-27T08:20:00-05:00
 title: Reviving a favorite project
-excerpt: I'm bringing one of my favorite projects, The Tools Artists Use, back from dormancy.
+description: I'm bringing one of my favorite projects, The Tools Artists Use, back from dormancy.
 tags:
 - art
 - projects

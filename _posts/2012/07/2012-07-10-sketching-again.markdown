@@ -2,7 +2,7 @@
 layout: post
 date: 2012-07-10T20:48:00-05:00
 title: Sketching again
-excerpt: I've picked up my pens and pencils and I'm putting them to paper again.
+description: I've picked up my pens and pencils and I'm putting them to paper again.
 tags:
 - art
 - sketch

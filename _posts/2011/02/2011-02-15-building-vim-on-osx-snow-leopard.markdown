@@ -2,7 +2,7 @@
 layout: post
 date: 2011-02-15T21:28:00-05:00
 title: Building Vim on OSX Snow Leopard
-excerpt: How to compile a new version of Vim on OSX Snow Leopard
+description: How to compile a new version of Vim on OSX Snow Leopard
 tags:
 - osx
 - vim
