@@ -9,7 +9,7 @@ title: All
       {% capture clean_page_tag %}{{ page.tag | downcase | replace: ' ', '-' }}{% endcapture %}
       {% if clean_page_tag == clean_tag %}
         <li>
-          <a href="{{ site.url }}{{ post.url }}" title="{{ post.title | escape }}" rel="bookmark">{{ post.title }}</a> &mdash; {{ post.date | date: "%Y-%m-%d" }}
+          <a href="{{ post.url }}" title="{{ post.title | escape }}" rel="bookmark">{{ post.title }}</a> &mdash; {{ post.date | date: "%Y-%m-%d" }}
           {% if post.description.size > 0 %}
             <blockquote>
               {{ post.description }}

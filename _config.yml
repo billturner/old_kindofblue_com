@@ -1,10 +1,9 @@
 title: "Brilliant Corners"
 url: "http://brilliantcorners.org"
 author: "Bill Turner"
-email: "billturner@gmail.com"
+email: "hello@billturner.me"
 description: "The weblog of Pittsburgh-based Ruby on Rails developer Bill Turner."
 
-auto: false
 source: .
 paginate: 10
 permalink: /:year/:month/:title
@@ -12,7 +11,7 @@ permalink: /:year/:month/:title
 markdown: redcarpet
 pygments: false
 
-exclude: ["nginx.conf", "README.markdown", "_assets", "_drafts", "Gemfile", "Gemfile.lock", ".rvmrc", ".gitignore"]
+exclude: ["nginx.conf", "README.markdown", "_plugins", "_assets", "_drafts", "Gemfile", "Gemfile.lock", ".ruby-version", ".rvmrc", ".gitignore"]
 
 # assets
 assets:

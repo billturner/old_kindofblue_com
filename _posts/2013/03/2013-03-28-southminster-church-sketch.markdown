@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2013-03-28T15:29:00-05:00
+date: 2013-03-28T09:29:00-05:00
 title: "Southminster Church sketch"
 description: "Quick sketch done while waiting for daughter to get out of school."
 tags:

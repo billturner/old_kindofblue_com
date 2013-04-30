@@ -6,7 +6,7 @@ title: Bill Turner's Weblog
 {% for post in paginator.posts %}
   <article class="post">
 
-    <h3><a href="{{ site.url }}{{ post.url }}" rel="bookmark permalink" title="Permanent link to this post">{{ post.title }}</a></h3>
+    <h3><a href="{{ post.url }}" rel="bookmark permalink" title="Permanent link to this post">{{ post.title }}</a></h3>
 
     {{ post.content }}
 
@@ -29,12 +29,12 @@ title: Bill Turner's Weblog
 <div class="pagination">
  <div class="next-page">
     {% if paginator.next_page %}
-      <a href="{{ site.url }}/page{{ paginator.next_page }}/">&laquo; Older Posts</a>
+      <a href="/page{{ paginator.next_page }}/">&laquo; Older Posts</a>
     {% endif %}
   </div>
   <div class="previous-page">
     {% if paginator.previous_page %}
-      <a href="{{ site.url }}{% if paginator.previous_page == 1 %}/{% else %}/page{{ paginator.previous_page }}/{% endif %}">Newer Posts &raquo;</a>
+      <a href="{% if paginator.previous_page == 1 %}/{% else %}/page{{ paginator.previous_page }}/{% endif %}">Newer Posts &raquo;</a>
     {% endif %}
   </div>
 </div>
