@@ -5,6 +5,7 @@ title: "Southminster Church sketch"
 description: "Quick sketch done while waiting for daughter to get out of school."
 tags:
 - art
+- ink
 - sketch
 ---
 <div class="embedded-large-sketch">
