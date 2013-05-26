@@ -5,6 +5,7 @@ title: "A relaunch, and a sketch"
 description: "I start posting interviews again, and another Everyday Matters challenge sketch."
 tags:
 - art
+- ink
 - projects
 - sketch
 - the tools artists use
