@@ -2,7 +2,7 @@
 layout: post
 date: "2013-06-01 21:50"
 title: "Sketching Uptown Mt. Lebanon"
-description: "change"
+description: "I met with a local plein air group and did a bit of urban sketching."
 tags:
 - art
 - sketch
