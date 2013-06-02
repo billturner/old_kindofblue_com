@@ -3,6 +3,8 @@ url: "http://brilliantcorners.org"
 author: "Bill Turner"
 email: "hello@billturner.me"
 description: "The weblog of Pittsburgh-based Ruby on Rails developer Bill Turner."
+timezone: "America/New_York"
+lsi: false
 
 source: .
 paginate: 10

@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "jekyll", "1.0.0.rc1"
+gem "jekyll", "1.0.2"
 gem "redcarpet"
 gem "activesupport", "3.2.13"
 
