@@ -105,6 +105,18 @@ header {
       margin: 5px 10px 5px 0;
     }
     .embedded-thumb:after {content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;}
+
+    .update-available {
+      border: 2px solid green;
+      border-radius: 10px;
+      padding: 5px 15px;
+
+      h3 {
+        color: green;
+        margin-top: 5px;
+        padding-top: 0;
+      }
+    }
   }
 }
 #sidebar {
