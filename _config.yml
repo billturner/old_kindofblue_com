@@ -1,5 +1,5 @@
-title: "Brilliant Corners"
-url: "http://brilliantcorners.org"
+title: "Kind of Blue"
+url: "http://kindofblue.com"
 author: "Bill Turner"
 email: "hello@billturner.me"
 description: "The weblog of Pittsburgh-based Ruby on Rails developer Bill Turner."
@@ -13,7 +13,7 @@ permalink: /:year/:month/:title
 markdown: redcarpet
 pygments: false
 
-exclude: ["nginx.conf", "README.markdown", "_plugins", "_assets", "_drafts", "Gemfile", "Gemfile.lock", ".ruby-version", ".rvmrc", ".gitignore"]
+exclude: ["nginx.conf", "README.markdown", "_plugins", "_assets", "_drafts", "Gemfile", "Gemfile.lock", ".ruby-version", ".gitignore"]
 
 # assets
 assets:

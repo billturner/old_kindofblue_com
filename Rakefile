@@ -13,14 +13,14 @@ desc "Build the site before deployment"
 task :build do
   puts "Building the site..."
   task("clear").invoke
-  sh "jekyll -t build"
+  sh "bundle exec jekyll -t build"
 end
 
 desc "Serve the site locally"
 task :serve do
   puts "Building the site..."
   task("clear").invoke
-  sh "jekyll -w -t serve"
+  sh "bundle exec jekyll -w -t serve"
 end
 
 desc "Start a new post from the base template"

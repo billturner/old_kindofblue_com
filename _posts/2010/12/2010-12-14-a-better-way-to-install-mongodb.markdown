@@ -7,7 +7,7 @@ tags:
 - mongodb
 - ubuntu
 ---
-My [last post on installing MongoDB on Ubuntu](http://brilliantcorners.org/2010/01/installing-mongodb-on-ubuntu/ "My previous MongoDB on Ubuntu archive post") is quite popular. Sadly, they aren't the best, or the most up to date installation instructions. While I don't really mess with MongoDB anymore, I feel a little bad with so much traffic coming from Google to those outdated instructions. In fact, it's super easy to install MongoDB on an Ubuntu server these days.
+My [last post on installing MongoDB on Ubuntu](http://kindofblue.com/2010/01/installing-mongodb-on-ubuntu/ "My previous MongoDB on Ubuntu archive post") is quite popular. Sadly, they aren't the best, or the most up to date installation instructions. While I don't really mess with MongoDB anymore, I feel a little bad with so much traffic coming from Google to those outdated instructions. In fact, it's super easy to install MongoDB on an Ubuntu server these days.
 
 Basically, all you need to do is add a new source to your `/etc/apt/sources.list`. For the latest Ubuntu (10.10 at the time of this post), you'll add:
 

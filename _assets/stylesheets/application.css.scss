@@ -153,17 +153,17 @@ a.icon-link {
   @include icon-link;
 }
 
-a#feed-link { background-image: url("{% asset_path feedicon16.png %}"); }
-a#mlkshk-link { background-image: url("{% asset_path mlkshk-icon.png %}"); }
-a#flickr-link { background-image: url("{% asset_path flickr-icon.png %}"); }
-a#pinboard-link { background-image: url("{% asset_path pinboard-icon.gif %}"); }
-a#tumblr-link { background-image: url("{% asset_path tumblr-icon.png %}"); }
-a#github-link { background-image: url("{% asset_path github-icon.png %}"); }
-a#twitter-link { background-image: url("{% asset_path twitter-icon.png %}"); }
-a#linkedin-link { background-image: url("{% asset_path linkedin-icon.png %}"); }
-a#aim-link { background-image: url("{% asset_path aim-icon.png %}"); }
-a#gmail-link { background-image: url("{% asset_path gmail-icon.png %}"); }
-a#skype-link { background-image: url("{% asset_path skype-icon.png %}"); }
+a#feed-link { background-image: url(asset_path("feedicon16.png")); }
+a#mlkshk-link { background-image: url(asset_path("mlkshk-icon.png")); }
+a#flickr-link { background-image: url(asset_path("flickr-icon.png")); }
+a#pinboard-link { background-image: url(asset_path("pinboard-icon.gif")); }
+a#tumblr-link { background-image: url(asset_path("tumblr-icon.png")); }
+a#github-link { background-image: url(asset_path("github-icon.png")); }
+a#twitter-link { background-image: url(asset_path("twitter-icon.png")); }
+a#linkedin-link { background-image: url(asset_path("linkedin-icon.png")); }
+a#aim-link { background-image: url(asset_path("aim-icon.png")); }
+a#gmail-link { background-image: url(asset_path("gmail-icon.png")); }
+a#skype-link { background-image: url(asset_path("skype-icon.png")); }
 
 .pagination { font-size: 1.2em; width: 99%; margin: 10px; }
 .pagination .next-page { float: left; padding-left: 10px; }
