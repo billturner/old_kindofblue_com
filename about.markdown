@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+description: "A little about me, Bill Turner, and the weblog itself."
 ---
 **About Me**
 

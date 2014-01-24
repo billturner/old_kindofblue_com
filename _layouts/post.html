@@ -2,11 +2,8 @@
 layout: default
 ---
 <article class="post">
-
   <h2><a href="{{ page.url }}" rel="bookmark permalink" title="Permanent link to this post">{{ page.title }}</a></h2>
-
   {{ content }}
-
   <div class="meta">
     {{ page.date | date: "%Y-%m-%d %I:%M%p" }}
     {% if page.tags.size > 0 %}
@@ -16,9 +13,7 @@ layout: default
       {% endfor %}
     {% endif %}
   </div>
-
 </article>
-
 <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'brilliantcorners';

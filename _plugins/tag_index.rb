@@ -8,9 +8,10 @@ module Jekyll
       self.process(@name)
       self.read_yaml(File.join(base, '_layouts'), 'tag.html')
       self.data['tag'] = tag
-      tag_title_prefix = site.config['tag_title_prefix'] || 'Posts tagged &ldquo;'
-      tag_title_suffix = site.config['tag_title_suffix'] || '&rdquo;'
+      tag_title_prefix = site.config['tag_title_prefix'] || "Posts tagged '"
+      tag_title_suffix = site.config['tag_title_suffix'] || "'"
       self.data['title'] = "#{tag_title_prefix}#{tag.gsub("-", " ")}#{tag_title_suffix}"
+      self.data['description'] = "All posts on the #{site.config['title']} weblog tagged with the term '#{tag.gsub("-", " ")}'."
     end
   end
   class TagGenerator < Generator

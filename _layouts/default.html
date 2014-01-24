@@ -2,9 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>{{ page.title }} | {{ site.title }}</title>
     {% include head.html %}
-    {% include google_analytics.html %}
   </head>
   <body>
     <div id="container">
@@ -23,6 +21,7 @@
 
     </div>
     {% javascript application %}
+    {% include google_analytics.html %}
     <script type="text/javascript">
       {% asset actions.js %}
       {% include disqus.html %}

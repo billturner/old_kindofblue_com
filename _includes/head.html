@@ -1,11 +1,38 @@
-<meta name="author" content="Bill Turner" />
-<meta name="robots" content="index, follow" />
-<meta name="description" content="The weblog of Pittsburgh-based Ruby on Rails developer Bill Turner" />
-<meta name="google-site-verification" content="5N6bAnSPBEeEaSu7YC7QbhQ5XRI4wiju9oXfQ4ADTAA" />
-<meta name="msvalidate.01" content="ADC913E4D92B782D554434171B19D686" />
-<link rel="canonical" href="{{ site.url}}{{ page.url | replace: 'index.html', '' }}" />
-<link href="http://kindofblue.com/rss.xml" rel="alternate" title="Kind of Blue weblog RSS feed" type="application/rss+xml" />
-<link href="http://kindofblue.com/" rel="home" />
-<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-{% stylesheet application %}
-{% javascript vendor/modernizr %}
+<title>{{ page.title }} | {{ site.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="{{ site.description }}" />
+    {% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
+    <meta name="google-site-verification" content="5N6bAnSPBEeEaSu7YC7QbhQ5XRI4wiju9oXfQ4ADTAA" />
+    <meta name="msvalidate.01" content="ADC913E4D92B782D554434171B19D686" />
+    <link rel="canonical" href="{{ site.url }}{{ page.url | replace: 'index.html', '' }}" />
+    <link href="http://kindofblue.com/rss.xml" rel="alternate" title="Kind of Blue weblog RSS feed" type="application/rss+xml" />
+    <link href="http://kindofblue.com/" rel="home" />
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="/favicon.ico" rel="icon" type="image/x-icon" />
+    <meta name="author" content="Bill Turner" />
+    <link rel="author" href="https://plus.google.com/+BillTurner23?rel=author" />
+    <meta property="og:url" content="{{ site.url }}{{ page.url | replace: 'index.html', '' }}" />
+    <meta property="og:site_name" content="{{ site.title }} | Bill Turner's weblog" />
+    <meta property="og:locale" content="en_US" />
+    {% if page.title %}<meta property="og:title" content="{{ page.title }} | {{ site.title }}" />
+    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+    {% elsif post.id %}<meta property="og:title" content="{{ post.title }} | {{ site.title }}" />
+    <meta property="og:description" content="{{ post.description }}" />
+    {% else %}<meta property="og:title" content="{{ site.title }}" />
+    <meta property="og:description" content="{{ site.description }}" />
+    {% endif %}<meta name="twitter:card" value="summary" />
+    <meta name="twitter:creator" value="@billturner" />
+    <meta name="twitter:domain" content="{{ site.url | replace: '/', '' | replace: 'http:', '' }}">
+    <meta name="twitter:url" value="{{ site.url }}{{ page.url | replace: 'index.html', '' }}" />
+    {% if page.title %}<meta name="twitter:title" value="{{ page.title }} | {{ site.title }}" />
+    <meta name="twitter:description" value="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+    {% elsif post.id %}<meta name="twitter:title" value="{{ post.title }} | {{ site.title }}" />
+    <meta name="twitter:description" value="{{ post.description }}" />
+    {% else %}<meta name="twitter:title" value="{{ site.title }}" />
+    <meta name="twitter:description" value="{{ site.description }}" />
+    {% endif %}{% if page.tags %}<meta property="article:published_time" content="{{ page.date | date: "%Y-%m-%d %I:%M%p" }}" />
+    {% for tag in page.tags %}<meta property="article:tag" content="{{ tag | downcase }}" />
+    {% endfor %}{% endif %}
+    {% stylesheet application %}
+    {% javascript vendor/modernizr %}
