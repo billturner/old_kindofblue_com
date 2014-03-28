@@ -9,7 +9,7 @@ tags:
 - sketch
 - watercolor
 ---
-<a href="http://farm6.staticflickr.com/5483/12272821745_4a7e5641ea_c.jpg" rel="fancybox-20140202" class="fancybox" title="Sketchbook - Jan 4 &amp; 5th, 2014 by billturner, on Flickr"><img src="http://farm6.staticflickr.com/5483/12272821745_4a7e5641ea_z.jpg" width="640" height="320" alt="Sketchbook - Jan 4 &amp; 5th, 2014"></a>
+<a href="http://farm6.staticflickr.com/5483/12272821745_4a7e5641ea_c.jpg" rel="fancybox-20140202" class="fancybox" title="Sketchbook - Jan 4 &amp; 5th, 2014 by billturner, on Flickr"><img src="http://farm6.staticflickr.com/5483/12272821745_4a7e5641ea_z.jpg" alt="Sketchbook - Jan 4 &amp; 5th, 2014"></a>
 
 I started out this year sketching every day, even if it was just something simple and around the house. That lasted just over a week. Sigh. But, I have picked it up a few times since then, and I do plan on being a little better about sketching this year. I'd like to experiment a bit more with watercolors as well.
 

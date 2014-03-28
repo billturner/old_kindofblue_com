@@ -15,6 +15,12 @@ pygments: false
 
 exclude: ["nginx.conf", "README.markdown", "_plugins", "_assets", "_drafts", "Gemfile", "Gemfile.lock", ".ruby-version", ".gitignore"]
 
+pinboard_tag:
+  user:  "billturner"
+  limit: 5
+  tags:  "backbone"
+  list_tag: "ul"
+
 # assets
 assets:
   dirname: "assets"

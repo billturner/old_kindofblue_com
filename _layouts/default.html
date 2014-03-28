@@ -9,10 +9,19 @@
       <header>
         <h1><a href="{{ site.url }}" rel="home bookmark">{{ site.title }}</a></h1>
       </header>
-
-      <div id="sidebar">
-        {% include sidebar.html %}
-      </div>
+      <nav>
+        <ul>
+          <li>
+            <a rel="bookmark" title="About" href="/about.html">About</a>
+          </li>
+          <li>
+            <a rel="bookmark" title="All archived posts at Kind of Blue" href="/archive.html" id="archives">Archives</a>
+          </li>
+          <li>
+            <a rel="bookmark" title="Links" href="/links.html">Links</a>
+          </li>
+        </ul>
+      </nav>
 
       <div id="content">
         {{ content }}

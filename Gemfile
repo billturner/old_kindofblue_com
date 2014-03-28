@@ -2,10 +2,11 @@ source "https://rubygems.org"
 
 gem "jekyll"
 gem "redcarpet"
-gem "activesupport", "3.2.13"
+gem "activesupport", "3.2.17"
 
 # layout
 gem "bourbon"
+gem "bitters"
 gem "neat"
 
 # assets
