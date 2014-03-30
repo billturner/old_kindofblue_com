@@ -14,6 +14,6 @@ There is a local "plein air" group that's starting to meet the first Saturday of
 
 I'm glad the someone has started up the group, and if we keep meeting in the Uptown part of Mt. Lebanon, I'll definitely continue going. I'm quite please with the resulting sketch (with a few touches of watercolor):
 
-<div class="embedded-large-sketch">
+<div class="cgraphics">
   <a class="fancybox" rel="fancybox-20130601" href="http://farm4.staticflickr.com/3721/8913545579_6c439cc2a1_c.jpg" title="The Stevenson Williams Co. in Uptown Mt. Lebanon"><img src="http://farm4.staticflickr.com/3721/8913545579_6c439cc2a1.jpg" width="500" height="394" alt="The Stevenson Williams Co. in Uptown Mt. Lebanon" /></a>
 </div>

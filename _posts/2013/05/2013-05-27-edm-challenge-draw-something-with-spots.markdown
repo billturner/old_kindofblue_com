@@ -9,7 +9,7 @@ tags:
 - sketch
 - watercolor
 ---
-<div class="embedded-large-sketch">
+<div class="cgraphics">
   <a class="fancybox" rel="fancybox-20130527" href="http://farm8.staticflickr.com/7404/8860842899_8d13863957_c.jpg" title="Everyday Matters challenge #288 (draw something with spots)"><img src="http://farm8.staticflickr.com/7404/8860842899_8d13863957.jpg" width="500" height="317" alt="Everyday Matters challenge #288 (draw something with spots)" /></a>
 </div>
 

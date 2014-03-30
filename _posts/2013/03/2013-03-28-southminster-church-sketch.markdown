@@ -8,7 +8,7 @@ tags:
 - ink
 - sketch
 ---
-<div class="embedded-large-sketch">
+<div class="cgraphics">
   <a id="southminster-church" class="fancybox" href="http://farm9.staticflickr.com/8376/8595123255_b4ef9337e1_o.png" title="Sketch of Southminster Church in Mt. Lebanon, PA."><img src="http://farm9.staticflickr.com/8512/8595123269_44aef4ce18_o.png" width="550" height="348" alt="Sketch of Southminster Church in Mt. Lebanon, PA." /></a>
 </div>
 

@@ -3,20 +3,48 @@ layout: page
 title: Archives
 description: "All of the archived posts from the weblog."
 ---
-<ul class="archive">
-  <h3>Tags used in posts</h3>
-
+<h3>Tags used in posts</h3>
+<section>
   {% tag_list %}
+</section>
 
-  <h3>All archived posts</h3>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}" title="{{ post.title | escape }}" rel="bookmark">{{ post.title }}</a> &mdash; {{ post.date | date: "%Y-%m-%d" }}
-      {% if post.description.size > 0 %}
-        <blockquote>
-          {{ post.description }}
-        </blockquote>
-      {% endif %}
-    </li>
-  {% endfor %}
-</ul>
+<h3>Archived posts (by year)</h3>
+<section>
+  <ul id="archive-tabs" class="nav nav-tabs">
+    {% for post in site.posts %}
+      {% unless post.next %}
+        <li class="active"><a href="#{{ post.date | date: '%Y'}}" data-toggle="tab">{{ post.date | date: '%Y'}}</a>
+      {% else %}
+        {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+        {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+        {% if year != nyear %}
+          <li><a href="#{{ post.date | date: '%Y'}}" data-toggle="tab">{{ post.date | date: '%Y'}}</a>
+        {% endif %}
+      {% endunless %}
+    {% endfor %}
+  </ul>
+
+  <div class="tab-content">
+    {% for post in site.posts %}
+      {% unless post.next %}
+        <div class="tab-pane active" id="{{ post.date | date: '%Y'}}">
+      {% else %}
+        {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+        {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+        {% if year != nyear %}
+          </div>
+          <div class="tab-pane" id="{{ post.date | date: '%Y'}}">
+        {% endif %}
+          <p>
+            <a href="{{ post.url }}" title="{{ post.title | escape }}" rel="bookmark">{{ post.title }}</a> &mdash; {{ post.date | date: "%Y-%m-%d" }}
+          </p>
+          {% if post.description.size > 0 %}
+            <p class="small">
+              {{ post.description }}
+            </p>
+          {% endif %}
+      {% endunless %}
+    {% endfor %}
+    </div>
+  </div>
+</section>

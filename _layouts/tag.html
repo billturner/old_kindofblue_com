@@ -2,21 +2,21 @@
 layout: page
 title: All
 ---
-<ul class="archive">
+<section>
   {% for post in site.posts %}
     {% for tag in post.tags %}
       {% capture clean_tag %}{{ tag | downcase | replace: ' ', '-' }}{% endcapture %}
       {% capture clean_page_tag %}{{ page.tag | downcase | replace: ' ', '-' }}{% endcapture %}
       {% if clean_page_tag == clean_tag %}
-        <li>
+        <p>
           <a href="{{ post.url }}" title="{{ post.title | escape }}" rel="bookmark">{{ post.title }}</a> &mdash; {{ post.date | date: "%Y-%m-%d" }}
-          {% if post.description.size > 0 %}
-            <blockquote>
-              {{ post.description }}
-            </blockquote>
-          {% endif %}
-        </li>
+        </p>
+        {% if post.description.size > 0 %}
+          <p class="small">
+            {{ post.description }}
+          </p>
+        {% endif %}
       {% endif %}
     {% endfor %}
   {% endfor %}
-</ul>
+</section>

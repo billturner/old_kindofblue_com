@@ -13,6 +13,8 @@ A new art instruction book by Whitney Sherman called [_Playing with Sketches_](h
 
 Here's a (blurry) screenshot of the page:
 
-<img src="http://farm4.staticflickr.com/3677/12164868404_d568d5244b_z.jpg" width="640" height="599" alt="from-book">
+<div class="cgraphics">
+  <img src="http://farm4.staticflickr.com/3677/12164868404_d568d5244b_z.jpg" width="640" height="599" alt="from-book">
+</div>
 
 You can see a little more of the inside of the book at [Amazon.com](http://www.amazon.com/gp/product/1592538614/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1592538614&linkCode=as2&tag=billturner "Playing with Sketches on Amazon.com"), and I go into a little more detail [in a post over on The Tools Artist Use](http://thetoolsartistsuse.com/2014/01/wonderful-mention-in-playing-with-sketches-book/ "A post on The Tools Artists Use mentioning the mention in the book.").

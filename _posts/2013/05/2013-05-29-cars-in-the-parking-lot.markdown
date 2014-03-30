@@ -11,11 +11,9 @@ Waiting for my daughter and her friends to get out of middle school gives me som
 
 Here are a few collages of car sketches from the last few months:
 
-<div class="embedded-large-sketch">
+<div class="cgraphics">
   <a class="fancybox" rel="fancybox-20130530" href="http://farm8.staticflickr.com/7328/8884414895_d52ab5b3c9_c.jpg" title="Sketching cars"><img src="http://farm8.staticflickr.com/7328/8884414895_d52ab5b3c9.jpg" width="500" height="262" alt="Sketching cars" /></a>
-</div>
 
-<div class="embedded-large-sketch">
   <a class="fancybox" rel="fancybox-20130530" href="http://farm6.staticflickr.com/5329/8885036576_d1a948f060_b.jpg" title="Sketching cars #2"><img src="http://farm6.staticflickr.com/5329/8885036576_d1a948f060.jpg" width="500" height="388" alt="Sketching cars #2" /></a>
 </div>
 

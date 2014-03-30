@@ -1,4 +1,7 @@
 $(document).ready ->
+  $("#archive-tabs").on "click", "a", (e) ->
+    e.preventDefault()
+    $(this).tab "show"
   $("a.fancybox").fancybox
     closeClick: true
     closeBtn: true
