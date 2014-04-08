@@ -17,9 +17,10 @@ exclude: ["nginx.conf", "README.markdown", "_plugins", "_assets", "_drafts", "Ge
 
 pinboard_tag:
   user:  "billturner"
-  limit: 5
-  tags:  "backbone"
+  limit: 10
+  tags:  "inspiration"
   list_tag: "ul"
+  show_desc: true
 
 # assets
 assets:

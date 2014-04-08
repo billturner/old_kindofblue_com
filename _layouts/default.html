@@ -6,15 +6,14 @@
   </head>
   <body>
     <div class="container-fluid">
-      <div class="row">
+      <div class="row jumbotron">
         <header class="col-md-8 col-md-offset-2">
           <h1><a href="{{ site.url }}" rel="home bookmark">{{ site.title }}</a></h1>
+          <p>The weblog of Bill Turner</p>
+          <nav>
+            {% include nav.html %}
+          </nav>
         </header>
-      </div>
-      <div class="row">
-        <nav class="col-md-8 col-md-offset-2">
-          {% include nav.html %}
-        </nav>
       </div>
       <div class="row">
         <div class="col-md-8 col-md-offset-2">

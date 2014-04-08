@@ -2,16 +2,22 @@
 //= require fancybox
 
 @import "bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Domine:400,700);
 
 a {color:#009;text-decoration:underline;}
 
-.content {
-  border: 1px solid red;
-  float: none;
-  @include center-block;
-}
 header {
   text-align: left;
+  h1 {
+    font-family: 'Domine', serif;
+    font-weight: bold;
+    a {
+      text-decoration: none;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
 }
 
 nav ul {
@@ -31,13 +37,15 @@ article {
   h3 a {
     text-decoration: none;
   }
+}
 
-  blockquote {
-    border: 0;
-    font-style: italic;
-    font-size: 97%;
-    font-family: $font-family-serif;
-  }
+blockquote {
+  border: 0;
+  font-style: italic;
+  font-size: 97%;
+  font-family: $font-family-serif;
+  padding: 0 0 10px 0;
+  margin: 0 0 0 15px;
 }
 
 .post {
@@ -102,7 +110,7 @@ ul.links li.last:after, ul.links li.first:after { content: '  '; }
 
 div.post-separator {
   text-align: center;
-  margin: 10px 0;
+  margin: 5px 0;
   font-size: 300%;
 }
 .cgraphics {

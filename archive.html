@@ -39,9 +39,9 @@ description: "All of the archived posts from the weblog."
             <a href="{{ post.url }}" title="{{ post.title | escape }}" rel="bookmark">{{ post.title }}</a> &mdash; {{ post.date | date: "%Y-%m-%d" }}
           </p>
           {% if post.description.size > 0 %}
-            <p class="small">
+            <blockquote>
               {{ post.description }}
-            </p>
+            </blockquote>
           {% endif %}
       {% endunless %}
     {% endfor %}

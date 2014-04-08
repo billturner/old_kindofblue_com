@@ -1,7 +1,7 @@
 #
-# Pinboard Tag
+# Pinboard tag plugin for Jekyll
 #
-# Generates a list of links to a user's public bookmarks
+# Generates a list of links to a user's public Pinboard bookmarks.
 #
 # Usage:
 #
@@ -21,11 +21,12 @@
 #
 #   pinboard_tag:
 #     user:       "ericdfields"
-#     limit:      15               # default
-#     list_tag:   "ol"             # default
-#     list_class: "pinboard_list"  # default
-#     a_target:   "_blank"         # default is ""
+#     limit:      15
 #     tags:       "ruby,jekyll"
+#     list_tag:   "ol"
+#     list_class: "pinboard-list"
+#     new_tab:    false
+#     show_desc:  true
 #
 # ORIGINAL AUTHOR INFO:
 #
@@ -49,13 +50,14 @@ module Jekyll
       @options = tag_options(options)
       @config = Jekyll.configuration({})['pinboard_tag'] || {}
 
-      @user = @options["user"] || @config["user"] || "ericdfields"
+      @user  = @options["user"]   || @config["user"]  || "ericdfields"
       @limit = (@options["limit"] || @config["limit"] || 15).to_i
-      @tags = @options["tags"] || @config["tags"] || nil
+      @tags  = @options["tags"]   || @config["tags"]  || nil
 
-      @config["list_tag"] ||= "ol"
-      @config["list_class"] ||= "pinboard_list"
-      @config["a_target"] ||= ""
+      @config["list_tag"]   ||= "ol"
+      @config["list_class"] ||= "pinboard-list"
+      @config["new_tab"]    ||= false
+      @config["show_desc"]  ||= false
     end
 
     def render(context)
@@ -67,13 +69,16 @@ module Jekyll
     end
 
     def render_bookmark(bookmark)
-      <<-EOF
-      <li>
-        <a href="#{bookmark.url}" target="#{@config["a_target"]}">
-          #{bookmark.title}
-        </a>
-      </li>
-      EOF
+      html  = "<li>"
+      html += "<p><a href=\"#{bookmark.url}\""
+      html += " target=\"_blank\"" if @config["new_tab"]
+      html += ">"
+      html += "#{bookmark.title}</a></p>"
+      if @config["show_desc"] && bookmark.description != ""
+        html += "<blockquote>#{bookmark.description}</blockquote>"
+      end
+      html += "</li>"
+      html
     end
 
     def bookmarks
@@ -96,8 +101,8 @@ module Jekyll
         url += "/"
       end
       url += "?count=#{@limit}"
-      resp = Net::HTTP.get_response(URI.parse(url))
-      return resp.body
+      response = Net::HTTP.get_response(URI.parse(url))
+      return response.body
     end
 
     private

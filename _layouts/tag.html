@@ -2,6 +2,7 @@
 layout: page
 title: All
 ---
+<h3>All posts tagged with "{{ page.tag | downcase | replace: '-', ' ' }}"</h3>
 <section>
   {% for post in site.posts %}
     {% for tag in post.tags %}
@@ -12,9 +13,9 @@ title: All
           <a href="{{ post.url }}" title="{{ post.title | escape }}" rel="bookmark">{{ post.title }}</a> &mdash; {{ post.date | date: "%Y-%m-%d" }}
         </p>
         {% if post.description.size > 0 %}
-          <p class="small">
+          <blockquote>
             {{ post.description }}
-          </p>
+          </blockquote>
         {% endif %}
       {% endif %}
     {% endfor %}
