@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 gem "jekyll"
 gem "redcarpet"
-gem "activesupport", "3.2.17"
+gem "activesupport", "6.1.7.1"
 
 # assets
 gem "jekyll-assets"
